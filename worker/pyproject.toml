@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xrider-worker"
+version = "0.1.0"
+description = "XRider Motor Aggregator - Celery Worker"
+authors = ["XRider Team"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+celery = {extras = ["redis"], version = "^5.4.0"}
+sqlalchemy = "^2.0.0"
+psycopg2-binary = "^2.9.9"
+httpx = "^0.27.0"
+lxml = "^5.2.0"
+rapidfuzz = "^3.9.0"
+python-slugify = "^8.0.0"
+tenacity = "^8.3.0"
+structlog = "^24.2.0"
+pydantic-settings = "^2.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

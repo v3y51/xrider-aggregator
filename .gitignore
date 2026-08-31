@@ -1,0 +1,53 @@
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.venv
+venv/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ── Node / Next.js ─────────────────────────────────────────────────────────
+node_modules/
+.next/
+out/
+.vercel/
+*.tsbuildinfo
+frontend/.env.local
+frontend/.env.production
+
+# ── Docker ─────────────────────────────────────────────────────────────────
+*.log
+
+# ── OS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+
+# ── IDE ─────────────────────────────────────────────────────────────────────
+.idea/
+.vscode/settings.json
+
+# ── Secrets ─────────────────────────────────────────────────────────────────
+backend/.env
+worker/.env
+*.pem
+*.key
+
+# ── Static uploads (local) ──────────────────────────────────────────────────
+backend/static/images/
+
+# ── Alembic ─────────────────────────────────────────────────────────────────
+# Version dosyaları commit'lenmeli, sadece local cache'i ignore et
+alembic/__pycache__/

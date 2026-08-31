@@ -1,0 +1,130 @@
+services:
+  # ─── PostgreSQL ────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: xrider_postgres
+    environment:
+      POSTGRES_DB: xrider
+      POSTGRES_USER: xrider
+      POSTGRES_PASSWORD: xrider_dev_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U xrider"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ─── Redis ─────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: xrider_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ─── Meilisearch ───────────────────────────────────────
+  meilisearch:
+    image: getmeili/meilisearch:v1.7
+    container_name: xrider_meilisearch
+    environment:
+      MEILI_MASTER_KEY: xrider_meili_dev_key
+      MEILI_ENV: development
+    ports:
+      - "7700:7700"
+    volumes:
+      - meili_data:/meili_data
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:7700/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─── Backend (FastAPI) ─────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.dev
+    container_name: xrider_backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      DATABASE_URL: postgresql+asyncpg://xrider:xrider_dev_pass@postgres:5432/xrider
+      REDIS_URL: redis://redis:6379/0
+      MEILISEARCH_URL: http://meilisearch:7700
+      MEILISEARCH_MASTER_KEY: xrider_meili_dev_key
+      ENVIRONMENT: development
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      meilisearch:
+        condition: service_healthy
+
+  # ─── Celery Worker ─────────────────────────────────────
+  worker:
+    build:
+      context: ./worker
+      dockerfile: Dockerfile.dev
+    container_name: xrider_worker
+    command: celery -A celeryconfig worker --loglevel=info --concurrency=2
+    environment:
+      DATABASE_URL: postgresql+psycopg2://xrider:xrider_dev_pass@postgres:5432/xrider
+      REDIS_URL: redis://redis:6379/0
+      ENVIRONMENT: development
+    volumes:
+      - ./worker:/app
+      - ./backend:/backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  # ─── Celery Beat (Scheduler) ───────────────────────────
+  beat:
+    build:
+      context: ./worker
+      dockerfile: Dockerfile.dev
+    container_name: xrider_beat
+    command: celery -A celeryconfig beat --loglevel=info
+    environment:
+      DATABASE_URL: postgresql+psycopg2://xrider:xrider_dev_pass@postgres:5432/xrider
+      REDIS_URL: redis://redis:6379/0
+    volumes:
+      - ./worker:/app
+      - ./backend:/backend
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  # ─── Flower (Celery Monitor — opsiyonel) ───────────────
+  flower:
+    build:
+      context: ./worker
+      dockerfile: Dockerfile.dev
+    container_name: xrider_flower
+    command: celery -A celeryconfig flower --port=5555
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    ports:
+      - "5555:5555"
+    depends_on:
+      - redis
+
+volumes:
+  postgres_data:
+  redis_data:
+  meili_data:
