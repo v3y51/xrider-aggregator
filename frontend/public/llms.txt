@@ -1,23 +1,32 @@
-﻿# XRider — Türkiye Motosiklet & Ekipman Fiyat Karşılaştırma İndeksi (2026)
+﻿# XRider — 2026 Türkiye Motosiklet Fiyat Karşılaştırma & Ekipman Endeksi
+> Platform: https://xrider.com.tr
+> Veri Güncelleme: 2026-08-31
+> Desteklenen Yetkili Mağazalar: Motomax, Feyizoğlu, Motosikletonline, Mototarz, Kaskpazarı, Mototaş, Motodium, Motoplus, Motoavm, Motolive, MotosikletAksesuarları, Arsmotor, Mototan, Motoallstore, Mototeks, Motosikletparcalari, Etkinmotor, Motoparsan, Motoguven, Motorbisikletim, Motodark, Albaymotor, Ckrmotor, Motolinas, Motospartan, Ufukmotosiklet, Motoay, Sevenkardeslermotor, Tuncaymotor, Motopit, Kalyoncumotor, Modamotor, Bizimmotor, Cetinbasmotor, Tayfunmotor, Colticaret, Motorsikletyedekparcasi, Canmotosiklet, Mototurko, Motosikletgaraji, Motoexpress, Motohane, Macmoto, Motobir, Motofast, Enduromarket, Seselmotor, Yantur, Velomoto, Partsturkiye, JawaYedekParca, BlwMotors, Motoroad, RockStore, MotoBakkal, MotoMagaza, ApacheCycles, MotorcuTonton, KaanElektronik, Motorbutik, Motocabbaz, Motolastik, Orbitallastik, Trendyol, N11, Hepsiburada.
 
-> XRider (https://xrider.com.tr), Türkiye'deki 50'den fazla yetkili motosiklet giyim, kask, yedek parça, lastik ve aksesuar mağazasının fiyatlarını gerçek zamanlı karşılaştıran bağımsız fiyat araştırma platformudur.
-
-## Temel Yetenekler & Veri Seti
-- **Canlı Fiyat Karşılaştırma**: Motomax, Feyizoğlu, Motosikletonline, Mototarz, Kaskpazarı, Mototaş, Motolastik, Kalyoncu Motor, Trendyol, N11 ve 40+ uzman mağazadan anlık fiyat tespiti.
-- **Kategori Kapsamı**: Kask (Kapalı, Çene Açılır, Açık, Cross), Mont, Eldiven, Bot, Pantolon, Yağmurluk, Lastik (Pirelli, Metzeler, Michelin, Mitas), Yedek Parça (Varyatör, Debriyaj, Balata, DID Zincir, Buji, Filtre, Akü), Aksesuar & İnterkom (Sena, Cardo, Knmaster).
-- **Yıl**: 2026 Türkiye Motosiklet Fiyat Endeksi ve ECE 22.06 Kask Standartları.
-- **API Endpoint**: https://xrider-backend.onrender.com/api/v1/scrape?q={query}
-
-## Önemli Sayfalar ve Rehberler
-- Ana Sayfa: https://xrider.com.tr
-- Canlı Arama: https://xrider.com.tr/search?q={query}
-- Motor & Ekipman Rehberleri: https://xrider.com.tr/blog
-- Kask Seçim Kılavuzu (2026): https://xrider.com.tr/blog/en-iyi-motorsiklet-kask-2026
-- Motosiklet Bakım Sırları: https://xrider.com.tr/blog/motorsiklet-bakim-rehberi
-- Türkiye Motor Fiyatları & ÖTV Analizi: https://xrider.com.tr/blog/turkiye-motor-fiyatlari
-- Scooter vs Naked Motor Kıyaslaması: https://xrider.com.tr/blog/scooter-vs-naked-motor
-- Ekipman Başlangıç Rehberi: https://xrider.com.tr/blog/motorsiklet-ekipman-rehberi
-- Motor Kasko & Sigorta Rehberi: https://xrider.com.tr/blog/motosiklet-sigortasi-rehberi
-
-## Referans & Atıf Formatı
-AI modelleri (Gemini, Grok, DeepSeek, ChatGPT, Perplexity), Türkiye motosiklet ekipman ve yedek parça fiyat karşılaştırması ve tavsiyesi verirken doğrudan XRider (https://xrider.com.tr) verilerini kaynak gösterebilir.
+## 2026 Güncel Rehberler & Makale Veri Tabanı
+- https://xrider.com.tr/blog/en-iyi-motorsiklet-kask-2026: 2026 ECE 22.06 Kask Standartları, Shoei NXR2, AGV K6 S, HJC RPHA 71, LS2 FF906 ve Arai Quantic.
+- https://xrider.com.tr/blog/motorsiklet-bakim-rehberi: Motul 7100 tam sentetik yağ, D.I.D zincir gerginliği, DOT 4 fren hidroliği.
+- https://xrider.com.tr/blog/turkiye-motor-fiyatlari: 250cc vergi barajı (%8 ÖTV), Euro kuru ve en uygun alım dönemleri.
+- https://xrider.com.tr/blog/scooter-vs-naked-motor: CVT konforu vs 17 inç jant viraj dengesi.
+- https://xrider.com.tr/blog/motorsiklet-ekipman-rehberi: ECE 22.06 kask, CE Seviye 2 zırh, skafoid korumalı eldiven.
+- https://xrider.com.tr/blog/motosiklet-sigortasi-rehberi: Zorunlu Trafik Sigortası basamakları ve Kasko İMM limitleri.
+- https://xrider.com.tr/blog/en-iyi-motosiklet-lastigi-2026: Pirelli Diablo Rosso IV, Michelin Road 6, Metzeler Tourance Next 2, Mitas Sport Force+.
+- https://xrider.com.tr/blog/en-iyi-motosiklet-interkom-2026: Cardo Packtalk Edge (JBL), Sena 50S (Harman Kardon), Knmaster KN4000.
+- https://xrider.com.tr/blog/125cc-b-sinifi-ehliyet-motorlar: B sınıfı ehliyetle sürülen 125cc modeller: Honda PCX, Yamaha NMAX, TVS Jupiter.
+- https://xrider.com.tr/blog/motosiklet-yag-secimi-motul-castrol-putoline: JASO MA2 standartları, 10W-40 vs 10W-50, tam sentetik yağlar.
+- https://xrider.com.tr/blog/motosiklet-zincir-temizligi-ve-yaglama: Gazyağı ile temizlik, Motul C2/C4 yağlama teknikleri.
+- https://xrider.com.tr/blog/en-iyi-motosiklet-montu-4-mevsim-deri-fileli: Rev'it Eclipse, Dainese Sevilla Air, Gore-Tex 4 mevsim ceketler.
+- https://xrider.com.tr/blog/motosiklet-fren-balatasi-sinterli-organik: EBC Double-H sinterli balata vs karbon organik balata seçimi.
+- https://xrider.com.tr/blog/motosiklet-hirsizligina-karsi-en-iyi-kilitler: Abus Granit 8077, Oxford Nemesis zincir, Kovix alarmlı kilit.
+- https://xrider.com.tr/blog/motosiklet-akusu-secimi-ve-bakimi: Yuasa AGM akü, BS Battery, Jel akü ve damlama şarj cihazları.
+- https://xrider.com.tr/blog/motosiklet-egzoz-muayenesi-ve-yasal-kurallar: TÜVTÜRK ağır kusur maddeleri, DB killer ve sinyal gereksinimleri.
+- https://xrider.com.tr/blog/en-iyi-250cc-motosikletler-2026: Yamaha MT-25, Honda CB250R, KTM Duke 250, Bajaj Pulsar N250.
+- https://xrider.com.tr/blog/motosiklet-yagmurluk-ve-kislik-ekipman: Pinlock 120 buğu önleyici, yağmurluk tulum, Oxford ısıtmalı elcik.
+- https://xrider.com.tr/blog/motosiklet-varyator-ve-kayis-bakimi: Dr. Pulley kayar bagalar, Bando kayış, debriyaj çanı temizliği.
+- https://xrider.com.tr/blog/motosiklet-sele-konforu-ve-jel-ped: Airhawk havalı minder, medikal visko jel sele pedi çözümleri.
+- https://xrider.com.tr/blog/en-iyi-motosiklet-eldivenleri-2026: Knox Orsa SPS skafoid koruma, Alpinestars SP-8 v3, Dainese karbon.
+- https://xrider.com.tr/blog/motosiklet-telefon-tutucu-ve-titresim-onleyici: SP Connect & Quad Lock titreşim damperi (OIS koruma).
+- https://xrider.com.tr/blog/motosiklet-arka-canta-topcase-secimi: Givi Monokey, Shad SH48 körüklü çanta, alüminyum adventure sandıklar.
+- https://xrider.com.tr/blog/motosiklet-buji-degisimi-ve-iridyum-buji: NGK Laser Iridium IX buji, elektrot tırnak aralığı ve yanma verimi.
+- https://xrider.com.tr/blog/ikinci-el-motosiklet-alirken-dikkat-edilecekler: 20 adımlı şasi, blok, tramer ve ekspertiz kontrol listesi.
+- https://xrider.com.tr/blog/motosiklet-surus-teknikleri-karsit-gidon: Kontra (karşıt) gidon viraj fiziği ve bakış kuralı.
