@@ -1,0 +1,65 @@
+services:
+  # ─── FastAPI Backend Web Service ───────────────────────
+  - type: web
+    name: xrider-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install poetry && poetry install --without dev
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    plan: free
+    region: frankfurt # Türkiye'ye en yakın düşük gecikmeli Avrupa bölgesi
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: xrider-postgres
+          property: connectionString
+      - key: DATABASE_URL_SYNC
+        fromDatabase:
+          name: xrider-postgres
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: xrider-redis
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: MEILISEARCH_URL
+        sync: false
+      - key: MEILISEARCH_MASTER_KEY
+        sync: false
+
+  # ─── Celery Background Worker ──────────────────────────
+  - type: worker
+    name: xrider-worker
+    runtime: python
+    rootDir: worker
+    buildCommand: pip install poetry && poetry install
+    startCommand: celery -A celeryconfig worker --loglevel=info
+    plan: free
+    region: frankfurt
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: xrider-postgres
+          property: connectionString
+      - key: DATABASE_URL_SYNC
+        fromDatabase:
+          name: xrider-postgres
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: xrider-redis
+          property: connectionString
+
+# ─── Veritabanları (PostgreSQL + Redis) ───────────────────
+databases:
+  - name: xrider-postgres
+    databaseName: xrider
+    user: xrider
+    plan: free
+    region: frankfurt
