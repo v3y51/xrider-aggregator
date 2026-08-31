@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from contextlib import asynccontextmanager
 import structlog
+import os
 
 from app.core.config import settings
 
@@ -12,6 +13,15 @@ logger = structlog.get_logger()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("XRider Backend başlatılıyor", env=settings.ENVIRONMENT)
+    # Otomatik tablo oluşturma (PostgreSQL)
+    try:
+        from app.core.database import engine, Base
+        import app.models.models  # noqa: F401
+        async with engine.begin() as conn:
+            await conn.run_sync(Base.metadata.create_all)
+        logger.info("Veritabanı şeması ve tablolar başarıyla doğrulandı")
+    except Exception as e:
+        logger.warning("Veritabanı başlatma uyarısı", error=str(e))
     yield
     logger.info("XRider Backend kapatılıyor")
 
@@ -28,11 +38,7 @@ app = FastAPI(
 # ── CORS ──────────────────────────────────────────────────────────────────────
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:3000",
-        "https://xrider.com.tr",
-        "https://www.xrider.com.tr",
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -43,9 +49,13 @@ from app.api.v1 import router as api_v1_router  # noqa: E402
 app.include_router(api_v1_router, prefix="/api/v1")
 
 # ── Static Files (CDN görselleri local dev için) ──────────────────────────────
-import os  # noqa: E402
 os.makedirs(settings.STATIC_DIR, exist_ok=True)
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+
+@app.get("/")
+async def root():
+    return {"name": "XRider Motor Aggregator API", "status": "online", "docs": "/api/docs"}
 
 
 @app.get("/health")
