@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SELLER 3: MotoParts TR — Motor Yedek Parça ve Bakım Ürünleri
+  Feed Format: XRider Standard XML v1.0
+  Özellik: Bazı kayıtlarda fiyat USD → normalize test
+           Seller2 ile AGV kask başlık benzerliği → fuzzy match testi
+-->
+<products>
+
+  <!-- ═══════════════════════════════════════════════════
+       Motul 7100 4T Motor Yağı — GTIN mevcut
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MP-Y001</id>
+    <title>Motul 7100 4T 10W-40 Motorsiklet Motor Yağı 4 Litre</title>
+    <description><![CDATA[
+      Motul 7100 4T 10W-40, tam sentetik ester bazlı motor yağıdır. JASO MA2 ve API SN
+      sertifikalıdır. 4 zamanlı motorsiklet motorları için yüksek performans ve korozyon
+      koruması sağlar. Islak debriyaj uyumludur.
+    ]]></description>
+    <brand>Motul</brand>
+    <model>7100 4T 10W-40</model>
+    <gtin>3374650247205</gtin>
+    <mpn>104092</mpn>
+    <category>Yedek Parça &gt; Yağ ve Bakım &gt; Motor Yağı</category>
+    <price currency="TRY">1850.00</price>
+    <shipping_cost currency="TRY">39.90</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>50</stock_quantity>
+    <url>https://motoparts-tr.com/motul-7100-4t-10w40-4lt</url>
+    <images>
+      <image>https://motoparts-tr.com/img/motul7100-4lt-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="viskozite">10W-40</spec>
+      <spec name="hacim">4 Litre</spec>
+      <spec name="tur">Tam Sentetik</spec>
+      <spec name="sertifika">JASO MA2 / API SN</spec>
+      <spec name="islak_debriyaj_uyum">Evet</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       Michelin Pilot Street 2 Lastik — GTIN mevcut
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MP-L001</id>
+    <title>Michelin Pilot Street 2 Ön Lastik 120/70 ZR17 58W</title>
+    <description><![CDATA[
+      Michelin Pilot Street 2, sport-touring ve supersport motorsikletler için tasarlanmış
+      radyal lastiktir. Yağmur ve kuru yol performansını dengeleyen 2CT teknolojisi ile
+      üretilmiştir. 120/70 ZR17 ölçüsü çoğu nakid ve sport motor ön lastiği ile uyumludur.
+    ]]></description>
+    <brand>Michelin</brand>
+    <model>Pilot Street 2</model>
+    <gtin>3528707737023</gtin>
+    <mpn>694007</mpn>
+    <category>Yedek Parça &gt; Lastik ve Jant &gt; Ön Lastik</category>
+    <price currency="TRY">3450.00</price>
+    <shipping_cost currency="TRY">79.90</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>15</stock_quantity>
+    <url>https://motoparts-tr.com/michelin-pilot-street2-120-70-zr17</url>
+    <images>
+      <image>https://motoparts-tr.com/img/michelin-ps2-front-1.jpg</image>
+      <image>https://motoparts-tr.com/img/michelin-ps2-front-2.jpg</image>
+    </images>
+    <specs>
+      <spec name="olcu">120/70 ZR17</spec>
+      <spec name="yuk_indeksi">58W</spec>
+      <spec name="konum">Ön</spec>
+      <spec name="teknoloji">2CT (İkili Bileşik)</spec>
+      <spec name="jant_olcusu">17 inç</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       Brembo Ön Fren Diski — GTIN var
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MP-F001</id>
+    <title>Brembo Honda CB500F CB500X 2013-2024 Ön Fren Diski 296mm</title>
+    <description><![CDATA[
+      Brembo aftermarket ön fren diski, Honda CB500 serisi ile tam uyumludur.
+      296mm çapında, paslanmaz çelik yapımı, delikli tasarım ile soğutma performansı
+      artırılmıştır. OEM ölçülerinde üretilmiştir.
+    ]]></description>
+    <brand>Brembo</brand>
+    <model>78B40817</model>
+    <gtin>8020584105627</gtin>
+    <mpn>78B40817</mpn>
+    <category>Yedek Parça &gt; Fren Sistemi &gt; Fren Diski</category>
+    <price currency="TRY">2890.00</price>
+    <shipping_cost currency="TRY">49.90</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>7</stock_quantity>
+    <url>https://motoparts-tr.com/brembo-78b40817-honda-cb500-disk</url>
+    <images>
+      <image>https://motoparts-tr.com/img/brembo-78b40817-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="cap">296mm</spec>
+      <spec name="kalinlik">4.5mm</spec>
+      <spec name="delik_sayisi">5</spec>
+      <spec name="malzeme">Paslanmaz Çelik</spec>
+      <spec name="uyumlu_model">Honda CB500F 2013-2024, CB500X 2013-2024, CB500R 2019-2024</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       NORMALİZASYON TESTİ: Fiyat USD cinsinden
+       → ingestion aşamasında TRY'ye çevrilmeli
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MP-E001</id>
+    <title>Iridium Karbüratör Temizleme Spreyi 400ml</title>
+    <brand>WD-40</brand>
+    <model>Specialist Carb Cleaner</model>
+    <gtin>0079567300107</gtin>
+    <category>Yedek Parça &gt; Yağ ve Bakım &gt; Temizleyici</category>
+    <!-- USD fiyat → normalize edilmeli -->
+    <price currency="USD">8.99</price>
+    <shipping_cost currency="TRY">29.90</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>100</stock_quantity>
+    <url>https://motoparts-tr.com/wd40-carb-cleaner-400ml</url>
+    <images>
+      <image>https://motoparts-tr.com/img/wd40-carb-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="hacim">400ml</spec>
+      <spec name="kullanim">Karbüratör, Hava Filtresi Temizleme</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       FUZZY MATCHING TEST:
+       Seller2'deki AGV K6S ile benzer — GTIN yok
+       → pending_review kuyruğuna düşmeli (orta güven skoru)
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MP-K001</id>
+    <title>AGV K6-S Motosiklet Kaskı Full Face Siyah Mat Renk</title>
+    <!-- GTIN yok, başlık seller2/BG-K003 ile ~%85 benzer → matching testi -->
+    <brand>AGV</brand>
+    <model>K6S</model>
+    <category>Motosiklet Kask &gt; Tam Yüz</category>
+    <price currency="TRY">19200.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <stock_status>limited</stock_status>
+    <stock_quantity>1</stock_quantity>
+    <url>https://motoparts-tr.com/agv-k6s-full-face-black-mat</url>
+    <images>
+      <image>https://motoparts-tr.com/img/agv-k6s-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="tip">Full Face</spec>
+      <spec name="renk">Mat Siyah</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       STOK DIŞI örneği — test için
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MP-L002</id>
+    <title>Pirelli Diablo Rosso IV Arka Lastik 180/55 ZR17 73W</title>
+    <brand>Pirelli</brand>
+    <model>Diablo Rosso IV</model>
+    <gtin>8019227377735</gtin>
+    <mpn>3984700</mpn>
+    <category>Yedek Parça &gt; Lastik ve Jant &gt; Arka Lastik</category>
+    <price currency="TRY">5200.00</price>
+    <shipping_cost currency="TRY">99.90</shipping_cost>
+    <stock_status>out_of_stock</stock_status>
+    <stock_quantity>0</stock_quantity>
+    <url>https://motoparts-tr.com/pirelli-diablo-rosso4-180-55-zr17</url>
+    <images>
+      <image>https://motoparts-tr.com/img/pirelli-dr4-rear-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="olcu">180/55 ZR17</spec>
+      <spec name="yuk_indeksi">73W</spec>
+      <spec name="konum">Arka</spec>
+    </specs>
+  </product>
+
+</products>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SELLER 2: BikerGear TR — Motor Aksesuar ve Giyim Mağazası
+  Feed Format: XRider Standard XML v1.0
+  Özellik: Aynı kask modeli farklı fiyatla → fuzzy matching testi!
+-->
+<products>
+
+  <!-- ═══════════════════════════════════════════════════
+       AGV K6 S Kask — GTIN mevcut, Seller1 ile çakışmayacak (farklı ürün)
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>BG-K001</id>
+    <title>AGV K6 S MPLK Tam Yüz Motosiklet Kaskı - Siyah Mat</title>
+    <description><![CDATA[
+      AGV K6 S, premium karbon fiber kompozit kabuğu ve Pinlock 120 vizörü ile
+      tam yüz kask segmentinin en hafif ve aerodinamik modellerinden biridir.
+      ECE 22.06 ve DOT sertifikalıdır. İç mekan yıkanabilir ve hipoalerjenik kumaştan yapılmıştır.
+    ]]></description>
+    <brand>AGV</brand>
+    <model>K6 S MPLK</model>
+    <gtin>8051194569214</gtin>
+    <mpn>2118395002-006</mpn>
+    <category>Aksesuar &gt; Kask &gt; Tam Yüz</category>
+    <price currency="TRY">18500.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>12</stock_quantity>
+    <url>https://bikergear-tr.com/agv-k6s-mplk-siyah-mat</url>
+    <images>
+      <image>https://bikergear-tr.com/img/agv-k6s-black-1.jpg</image>
+      <image>https://bikergear-tr.com/img/agv-k6s-black-2.jpg</image>
+    </images>
+    <specs>
+      <spec name="tip">Tam Yüz</spec>
+      <spec name="malzeme">Karbon Fiber + Aramidit</spec>
+      <spec name="sertifika">ECE 22.06 / DOT</spec>
+      <spec name="vizor">Pinlock 120 dahil</spec>
+      <spec name="agirlik">1280g (M)</spec>
+      <spec name="havalandirma">Çoklu kanal ventilasyon</spec>
+      <spec name="renk">Flat Black</spec>
+      <spec name="beden_secenekleri">XS,S,M,L,XL,XXL</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       Shoei NXR2 — GTIN mevcut
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>BG-K002</id>
+    <title>Shoei NXR2 Motosiklet Kaskı Beyaz - S Beden</title>
+    <description><![CDATA[
+      Shoei NXR2, multi-ply matrix shell teknolojisi ile üretilen tam yüz kask.
+      CNS-1 vizör sistemi ve Pinlock 70 EVO lens dahildir. Aerodinamik tasarım ve
+      sessiz sürüş için optimize edilmiştir.
+    ]]></description>
+    <brand>Shoei</brand>
+    <model>NXR2</model>
+    <gtin>4512048474625</gtin>
+    <mpn>NXR2-WHT-S</mpn>
+    <category>Aksesuar &gt; Kask &gt; Tam Yüz</category>
+    <price currency="TRY">21900.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>5</stock_quantity>
+    <url>https://bikergear-tr.com/shoei-nxr2-beyaz</url>
+    <images>
+      <image>https://bikergear-tr.com/img/shoei-nxr2-white-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="tip">Tam Yüz</spec>
+      <spec name="malzeme">Multi-Ply Matrix Shell</spec>
+      <spec name="sertifika">ECE 22.06</spec>
+      <spec name="vizor">Pinlock 70 EVO dahil</spec>
+      <spec name="agirlik">1450g</spec>
+      <spec name="renk">Beyaz</spec>
+      <spec name="beden">S</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       Alpinestars SP-8 V3 Eldiven — GTIN var
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>BG-E001</id>
+    <title>Alpinestars SP-8 V3 Deri Motosiklet Eldiveni Siyah/Beyaz L</title>
+    <description><![CDATA[
+      Alpinestars SP-8 V3, yüksek kaliteli sığır derisi üst yüzeyi ve TPR eklemler ile
+      üst segment koruma sağlayan spor motosiklet eldivenidir. Mikrofon için iç cep
+      ve kısa bilek tasarımı ile konfor odaklıdır.
+    ]]></description>
+    <brand>Alpinestars</brand>
+    <model>SP-8 V3</model>
+    <gtin>8033966997079</gtin>
+    <mpn>3558321-12-L</mpn>
+    <category>Aksesuar &gt; Eldiven</category>
+    <price currency="TRY">3200.00</price>
+    <shipping_cost currency="TRY">49.90</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>20</stock_quantity>
+    <url>https://bikergear-tr.com/alpinestars-sp8v3-black-white-l</url>
+    <images>
+      <image>https://bikergear-tr.com/img/alpinestars-sp8v3-1.jpg</image>
+      <image>https://bikergear-tr.com/img/alpinestars-sp8v3-2.jpg</image>
+    </images>
+    <specs>
+      <spec name="malzeme">Sığır derisi + TPR</spec>
+      <spec name="beden">L</spec>
+      <spec name="renk">Siyah/Beyaz</spec>
+      <spec name="sertifika">CE Kat 2</spec>
+      <spec name="koruyucu">Parmak ucu TPR</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       FUZZY MATCHING TEST:
+       AGV K6 S kask — GTIN YOK, başlık Seller 3 ile benzer ama farklı
+       → composite scoring testi
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>BG-K003</id>
+    <title>AGV K6S Kask Siyah Mat Tam Yüz - Motosiklet Koruyucu</title>
+    <!-- GTIN yok → fuzzy matching zorunlu -->
+    <brand>AGV</brand>
+    <model>K6S</model>
+    <category>Kask &gt; Tam Yüz Kask</category>
+    <price currency="TRY">18750.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>4</stock_quantity>
+    <url>https://bikergear-tr.com/agv-k6s-siyah-mat-tam-yuz</url>
+    <images>
+      <image>https://bikergear-tr.com/img/agv-k6s-v2-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="tip">Tam Yüz</spec>
+      <spec name="renk">Mat Siyah</spec>
+    </specs>
+    <!-- Bu kayıt BG-K001 ile eşleşmeli: yüksek başlık benzerliği + marka eşleşme -->
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       Rev'it Jacket — tamamen yeni ürün (başka satıcıda yok)
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>BG-J001</id>
+    <title>REV'IT! Quantum 2 H2O Motosiklet Ceketi Siyah XL</title>
+    <description><![CDATA[
+      REV'IT! Quantum 2 H2O, SEESMART CE Seviye 1 omuz ve dirsek koruyucular ve
+      opsiyonel CE Seviye 2 sırt koruyucusu ile donatılmış su geçirmez tekstil cekett.
+      H2O membran laminasyon ile tam yağmur koruması sunar.
+    ]]></description>
+    <brand>REV'IT!</brand>
+    <model>Quantum 2 H2O</model>
+    <gtin>8712951221234</gtin>
+    <mpn>FJT295-0010-XL</mpn>
+    <category>Aksesuar &gt; Giysi &gt; Ceket</category>
+    <price currency="TRY">8900.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>2</stock_quantity>
+    <url>https://bikergear-tr.com/revit-quantum2-h2o-xl</url>
+    <images>
+      <image>https://bikergear-tr.com/img/revit-quantum2-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="malzeme">Polytex 450D + H2O membran</spec>
+      <spec name="beden">XL</spec>
+      <spec name="renk">Siyah</spec>
+      <spec name="sertifika">CE A</spec>
+      <spec name="su_gecirmezlik">Evet</spec>
+    </specs>
+  </product>
+
+</products>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SELLER 1: MotoShop TR — Komple Motorsiklet Satıcısı
+  Feed Format: XRider Standard XML v1.0
+  Güncelleme: Her 24 saatte bir
+  İletişim: feed@motoshop-tr.com
+-->
+<products>
+
+  <!-- ═══════════════════════════════════════════════════
+       Honda CB500F 2024
+       GTIN ile eşleşme → otomatik yüksek güven
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MS-001</id>
+    <title>Honda CB500F ABS 2024 Siyah Naked Motor</title>
+    <description><![CDATA[
+      Honda CB500F, orta sınıf motosiklet tutkunları için tasarlanmış sportif naked motordu.
+      471cc paralel çift silindirli motoru ile şehir içi ve uzun yol kullanımına uygundur.
+      ABS frenleme sistemi ve LED aydınlatma standart olarak sunulmaktadır.
+    ]]></description>
+    <brand>Honda</brand>
+    <model>CB500F ABS</model>
+    <year>2024</year>
+    <gtin>4549851581437</gtin>
+    <mpn>CB500FABN-2024</mpn>
+    <category>Motorsiklet &gt; Naked Motor</category>
+    <price currency="TRY">289500.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <shipping_note>Ücretsiz kargo - 3 iş günü</shipping_note>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>3</stock_quantity>
+    <url>https://motoshop-tr.com/honda-cb500f-abs-2024</url>
+    <images>
+      <image>https://motoshop-tr.com/img/honda-cb500f-2024-1.jpg</image>
+      <image>https://motoshop-tr.com/img/honda-cb500f-2024-2.jpg</image>
+      <image>https://motoshop-tr.com/img/honda-cb500f-2024-3.jpg</image>
+    </images>
+    <specs>
+      <spec name="motor_hacmi">471cc</spec>
+      <spec name="max_guc">47.6 hp @ 8600 rpm</spec>
+      <spec name="max_tork">43.2 Nm @ 6500 rpm</spec>
+      <spec name="sanziman">6 vitesli manuel</spec>
+      <spec name="agirlik">192 kg</spec>
+      <spec name="depo">17.7 litre</spec>
+      <spec name="renk">Mat Gunpowder Black Metallic</spec>
+      <spec name="abs">Evet</spec>
+      <spec name="garanti">2 yıl</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       Yamaha MT-07 2024
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MS-002</id>
+    <title>Yamaha MT-07 2024 Naked Motor Gri</title>
+    <description><![CDATA[
+      Yamaha MT-07, güçlü 689cc CP2 motoru ve hafif şasesiyle agresif naked motor segmentinin en
+      popüler modellerinden biridir. Traction control ve assist & slipper debriyaj ile donatılmıştır.
+    ]]></description>
+    <brand>Yamaha</brand>
+    <model>MT-07</model>
+    <year>2024</year>
+    <gtin>4582480500459</gtin>
+    <mpn>RM2D-2024-GY</mpn>
+    <category>Motorsiklet &gt; Naked Motor</category>
+    <price currency="TRY">399900.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <shipping_note>Ücretsiz kargo - 5 iş günü</shipping_note>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>1</stock_quantity>
+    <url>https://motoshop-tr.com/yamaha-mt-07-2024</url>
+    <images>
+      <image>https://motoshop-tr.com/img/yamaha-mt07-2024-1.jpg</image>
+      <image>https://motoshop-tr.com/img/yamaha-mt07-2024-2.jpg</image>
+    </images>
+    <specs>
+      <spec name="motor_hacmi">689cc</spec>
+      <spec name="max_guc">72 hp @ 9000 rpm</spec>
+      <spec name="max_tork">68 Nm @ 6500 rpm</spec>
+      <spec name="sanziman">6 vitesli manuel</spec>
+      <spec name="agirlik">184 kg</spec>
+      <spec name="depo">14 litre</spec>
+      <spec name="renk">Storm Fluo Grey</spec>
+      <spec name="abs">Evet</spec>
+      <spec name="traction_control">Evet</spec>
+      <spec name="garanti">2 yıl</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       KTM Duke 390 2024
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MS-003</id>
+    <title>KTM 390 Duke 2024 - Turuncu - ABS</title>
+    <description><![CDATA[
+      KTM 390 Duke, 399cc tek silindirli motoru ile B sınıfı motorlular için ideal bir seçimdir.
+      Özellikle şehir içi kullanım ve manevrabilite açısından üstündür. Supermoto tarzı tasarımı
+      ve yüksek kaliteli WP süspansiyonlarıyla dikkat çekmektedir.
+    ]]></description>
+    <brand>KTM</brand>
+    <model>390 Duke</model>
+    <year>2024</year>
+    <gtin>9006210039845</gtin>
+    <mpn>KTM390DUKE-2024-OR</mpn>
+    <category>Motorsiklet &gt; Naked Motor</category>
+    <price currency="TRY">195000.00</price>
+    <shipping_cost currency="TRY">500.00</shipping_cost>
+    <shipping_note>Kargoya verilir - 7 iş günü</shipping_note>
+    <stock_status>limited</stock_status>
+    <stock_quantity>2</stock_quantity>
+    <url>https://motoshop-tr.com/ktm-390-duke-2024</url>
+    <images>
+      <image>https://motoshop-tr.com/img/ktm390duke-2024-1.jpg</image>
+    </images>
+    <specs>
+      <spec name="motor_hacmi">399cc</spec>
+      <spec name="max_guc">46 hp @ 9000 rpm</spec>
+      <spec name="max_tork">37 Nm @ 7000 rpm</spec>
+      <spec name="sanziman">6 vitesli manuel</spec>
+      <spec name="agirlik">163 kg</spec>
+      <spec name="depo">13.5 litre</spec>
+      <spec name="renk">KTM Orange</spec>
+      <spec name="abs">Evet</spec>
+      <spec name="garanti">2 yıl</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       Honda PCX 125 Scooter
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MS-004</id>
+    <title>Honda PCX 125 2024 Akıllı Scooter Beyaz</title>
+    <description><![CDATA[
+      Honda PCX 125, eSP+ motoru ve SMART Keyless sistemi ile şehir içi ulaşımda konfor ve
+      teknoloji sunan premium scooter. Start-stop sistemi ve USB şarj çıkışı standart.
+    ]]></description>
+    <brand>Honda</brand>
+    <model>PCX 125</model>
+    <year>2024</year>
+    <gtin>4549851694694</gtin>
+    <mpn>JK1KF1400M</mpn>
+    <category>Motorsiklet &gt; Scooter</category>
+    <price currency="TRY">129900.00</price>
+    <shipping_cost currency="TRY">0.00</shipping_cost>
+    <stock_status>in_stock</stock_status>
+    <stock_quantity>8</stock_quantity>
+    <url>https://motoshop-tr.com/honda-pcx-125-2024</url>
+    <images>
+      <image>https://motoshop-tr.com/img/honda-pcx125-2024-1.jpg</image>
+      <image>https://motoshop-tr.com/img/honda-pcx125-2024-2.jpg</image>
+    </images>
+    <specs>
+      <spec name="motor_hacmi">125cc</spec>
+      <spec name="max_guc">12.3 hp @ 8750 rpm</spec>
+      <spec name="max_tork">12 Nm @ 6500 rpm</spec>
+      <spec name="sanziman">Otomatik CVT</spec>
+      <spec name="agirlik">131 kg</spec>
+      <spec name="depo">8.1 litre</spec>
+      <spec name="renk">Pearl Jasmine White</spec>
+      <spec name="abs">Evet</spec>
+      <spec name="usb_sarj">Evet</spec>
+      <spec name="garanti">2 yıl</spec>
+    </specs>
+  </product>
+
+  <!-- ═══════════════════════════════════════════════════
+       HATA ÖRNEK KAYDI — parse_errors test için
+       (Eksik zorunlu alanlar → pipeline durmamalı)
+  ═══════════════════════════════════════════════════ -->
+  <product>
+    <id>MS-005-BROKEN</id>
+    <title></title>
+    <!-- Fiyat yok, başlık yok → hata loguna düşmeli -->
+    <brand>TestHata</brand>
+    <category>Belirsiz</category>
+    <stock_status>in_stock</stock_status>
+    <url>https://motoshop-tr.com/broken-product</url>
+  </product>
+
+</products>
