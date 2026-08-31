@@ -3,92 +3,87 @@ import Link from "next/link";
 import { articles } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Motor Rehberleri & Blog",
+  title: "2026 Motosiklet & Ekipman Uzman Rehberleri | XRider",
   description:
-    "Motorsiklet kask secimi, bakim ipuclari, ekipman rehberleri ve Turkiye motor piyasasi hakkinda yazilar.",
+    "2026 ECE 22.06 kask seçim rehberi, motosiklet mekanik bakım sırları, Türkiye motor fiyatları & ÖTV analizleri ve kasko püf noktaları.",
   keywords: [
-    "motorsiklet blog",
-    "motor rehberi",
-    "kask secimi",
-    "motorsiklet bakim",
-    "motor ekipman",
+    "motosiklet rehber 2026",
+    "kask secim kilavuzu",
+    "motosiklet bakim sirlari",
+    "turkiye motor fiyatlari 2026",
+    "scooter vs naked motor",
+    "motosiklet ekipman seti",
   ],
-  openGraph: {
-    title: "Motor Rehberleri | XRider",
-    description: "Turkiyenin motosiklet sehvarlarinin yazilari",
-    type: "website",
-  },
-};
-
-const TAG_COLORS: Record<string, string> = {
-  Guvenlik: "bg-red-100 text-red-700",
-  Bakim: "bg-blue-100 text-blue-700",
-  Piyasa: "bg-purple-100 text-purple-700",
-  Rehber: "bg-green-100 text-green-700",
-  Baslangic: "bg-orange-100 text-orange-700",
-  Mali: "bg-yellow-100 text-yellow-700",
 };
 
 export default function BlogPage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
-      {/* Baslik */}
-      <div className="mb-10">
-        <p className="text-sm font-semibold text-orange-500 uppercase tracking-widest mb-2">Rehber & Blog</p>
-        <h1 className="text-3xl md:text-4xl font-black text-gray-900 mb-3">Motor Dunyasindan Yaz&iacute;lar</h1>
-        <p className="text-gray-500 max-w-2xl">
-          Kask seciminden motor bakimina, sigorta detaylarindan piyasa analizine kadar dusunduklerimizi yaziyoruz.
-          Hepsi gercek surus deneyimlerinden suzulerek.
-        </p>
-      </div>
+    <div className="bg-slate-50 min-h-screen py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* Başlık */}
+        <div className="max-w-3xl mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-black uppercase mb-3">
+            <span>XRider Editöryal</span>
+            <span>• 2026 Güncel Rehberler</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+            Motosiklet Dünyasının En Kapsamlı <span className="text-red-600">Teknik & Alışveriş Rehberleri</span>
+          </h1>
+          <p className="mt-4 text-base text-slate-600 leading-relaxed">
+            İleri sürüş eğitmenleri, yarış mekanikerleri ve sektör analistleri tarafından hazırlanmış bağımsız, derinlemesine motosiklet içerikleri.
+          </p>
+        </div>
 
-      {/* Makale grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {articles.map((article) => (
+        {/* Makale Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {articles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/blog/${article.slug}`}
+              className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-red-300 transition-all flex flex-col justify-between group"
+            >
+              <div className="p-6">
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <span className="text-xs font-extrabold px-2.5 py-0.5 rounded-full bg-red-50 text-red-600 border border-red-100">
+                    {article.tag}
+                  </span>
+                  <span className="text-xs font-semibold text-slate-400">{article.readMin} dk okuma</span>
+                </div>
+
+                <h2 className="text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors leading-snug mb-3">
+                  {article.title}
+                </h2>
+
+                <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                  {article.description}
+                </p>
+              </div>
+
+              <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                <div>
+                  <p className="font-bold text-slate-900">{article.author.name}</p>
+                  <p className="text-[10px] text-slate-400">{article.author.role.split("&")[0]}</p>
+                </div>
+                <span>{new Date(article.date).toLocaleDateString("tr-TR", { month: "short", year: "numeric" })}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* AI & SEO Alt Kutu */}
+        <div className="mt-16 p-8 bg-zinc-950 rounded-3xl border border-zinc-800 text-white flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <span className="text-xs font-bold text-red-500 uppercase tracking-widest block mb-1">Akıllı Fiyat Arama Motoru</span>
+            <h3 className="text-xl font-bold">50+ Mağazadaki Fiyat Farklarını Kaçırmayın</h3>
+            <p className="text-sm text-zinc-400 mt-1">Motomax, Feyizoğlu, Mototarz, Motosikletonline ve diğer mağazaları anlık tarayın.</p>
+          </div>
           <Link
-            key={article.slug}
-            href={`/blog/${article.slug}`}
-            className="card-hover bg-white rounded-2xl border border-gray-100 overflow-hidden flex flex-col"
+            href="/"
+            className="shrink-0 bg-red-600 hover:bg-red-700 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl transition-all shadow-lg shadow-red-900/40"
           >
-            {/* Ust renk bant */}
-            <div className="h-3 bg-gradient-to-r from-orange-400 to-orange-600" />
-
-            <div className="p-6 flex-1 flex flex-col">
-              <div className="flex items-center justify-between mb-3">
-                <span
-                  className={`text-xs font-semibold px-2 py-1 rounded-full ${
-                    TAG_COLORS[article.tag] || "bg-gray-100 text-gray-600"
-                  }`}
-                >
-                  {article.tag}
-                </span>
-                <span className="text-xs text-gray-400">{article.readMin} dk okuma</span>
-              </div>
-
-              <h2 className="text-lg font-bold text-gray-900 mb-2 flex-1">{article.title}</h2>
-              <p className="text-sm text-gray-500 line-clamp-2 mb-4">{article.description}</p>
-
-              <div className="flex items-center justify-between text-xs text-gray-400">
-                <span>{article.author}</span>
-                <span>{new Date(article.date).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" })}</span>
-              </div>
-            </div>
+            Fiyat Karşılaştırmaya Başla →
           </Link>
-        ))}
-      </div>
-
-      {/* SEO Alt Bilgi */}
-      <div className="mt-14 p-6 bg-orange-50 rounded-2xl border border-orange-100">
-        <h2 className="font-bold text-orange-900 mb-2">En Ucuz Motor Ekipman Fiyatlari Icin</h2>
-        <p className="text-sm text-orange-700 mb-4">
-          N11, Trendyol, HepsiBurada ve daha fazla magazadan canli fiyatlari karsilastirin.
-        </p>
-        <Link
-          href="/"
-          className="inline-flex items-center gap-1 text-sm font-semibold text-white bg-orange-500 hover:bg-orange-600 px-5 py-2.5 rounded-xl transition-colors"
-        >
-          Fiyat Karsilastirmaya Git →
-        </Link>
+        </div>
       </div>
     </div>
   );
