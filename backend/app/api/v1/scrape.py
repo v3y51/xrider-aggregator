@@ -456,6 +456,9 @@ async def live_scrape(
         if isinstance(r, list):
             items.extend(r)
 
+    # Geçerli başlık ve fiyata sahip ürünleri filtrele
+    items = [i for i in items if i.title and len(i.title.strip()) >= 3 and i.price_raw and i.price_raw > 0]
+
     # Fiyata göre sırala (En ucuzdan en pahalıya - Akakçe mantığı)
     items.sort(key=lambda x: (x.price_raw is None, x.price_raw or 0))
 
