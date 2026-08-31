@@ -7,7 +7,7 @@ import pytest
 from app.services.ingestion.feed_parser import parse_xml_feed, parse_csv_feed, generate_batch_id
 
 
-VALID_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
+VALID_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <products>
   <product>
     <id>TEST-001</id>
@@ -30,14 +30,14 @@ VALID_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
     </specs>
   </product>
 </products>
-"""
+""".encode("utf-8")
 
-BROKEN_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
+BROKEN_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <products>
   <product>
     <id>BROKEN-001</id>
     <title></title>
-    <!-- Fiyat yok, başlık yok -->
+    <!-- Fiyat yok, baslik yok -->
     <brand>Test</brand>
     <url>https://example.com/broken</url>
   </product>
@@ -50,12 +50,12 @@ BROKEN_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
     <stock_status>in_stock</stock_status>
   </product>
 </products>
-"""
+""".encode("utf-8")
 
-VALID_CSV = b"""id,title,brand,model,gtin,price,currency,shipping_cost,stock_status,url
+VALID_CSV = """id,title,brand,model,gtin,price,currency,shipping_cost,stock_status,url
 CSV-001,AGV K6S Kask Siyah,AGV,K6S,8051194569214,18500.00,TRY,0,in_stock,https://example.com/agv-k6s
 CSV-002,Motul 7100 4T Motor Yagi,Motul,7100 4T,3374650247205,1850.00,TRY,39.90,in_stock,https://example.com/motul
-"""
+""".encode("utf-8")
 
 
 class TestXMLParser:

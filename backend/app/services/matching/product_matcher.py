@@ -157,15 +157,12 @@ class ProductMatcher:
             # ── Spec örtüşmesi ───────────────────────────────────────────
             spec_overlap = _calculate_spec_overlap(offer_specs, candidate.specs)
 
-            # ── GTIN bileşeni (bu aşamada zaten 0 — match olmadı) ───────
-            gtin_score = 0.0
-
-            # ── Ağırlıklı kompozit skor ──────────────────────────────────
+            # ── Ağırlıklı kompozit skor (GTIN yoksa kalan ağırlıklar normalize edilir) ──
+            total_w = W_TITLE + W_BRAND + W_SPEC
             composite = (
-                gtin_score * W_GTIN +
-                title_sim * W_TITLE +
-                brand_score * W_BRAND +
-                spec_overlap * W_SPEC
+                title_sim * (W_TITLE / total_w) +
+                brand_score * (W_BRAND / total_w) +
+                spec_overlap * (W_SPEC / total_w)
             )
 
             if composite > best_score:
