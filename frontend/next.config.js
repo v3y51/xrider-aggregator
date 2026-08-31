@@ -1,13 +1,11 @@
-/** @type {import('next').NextConfig} */
+﻿/** @type {import('next').NextConfig} */
 const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://xrider-backend.onrender.com";
 
 const nextConfig = {
   images: {
     remotePatterns: [
-      { hostname: "localhost" },
-      { hostname: "api.xrider.com.tr" },
-      { hostname: "cdn.xrider.com.tr" },
-      { hostname: "xrider-backend.onrender.com" },
+      { protocol: "https", hostname: "**" },
+      { protocol: "http", hostname: "**" },
     ],
   },
   async rewrites() {
