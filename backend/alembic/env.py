@@ -16,7 +16,7 @@ config = context.config
 # .ini yerine settings'den URL al
 config.set_main_option("sqlalchemy.url", settings.DATABASE_URL_SYNC)
 
-if config.config_file_name is not None:
+if config.config_file_name is not None and config.get_section("loggers"):
     fileConfig(config.config_file_name)
 
 target_metadata = Base.metadata
