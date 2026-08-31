@@ -1,4 +1,4 @@
-﻿export interface Article {
+export interface Article {
   slug: string;
   title: string;
   description: string;
@@ -16,547 +16,551 @@
   aiSummary: string;
 }
 
-export const articles: Article[] = [  {
-    slug: "en-iyi-motorsiklet-kask-2026",
-    title: "Kafana Yatırım Yap: 2026'da Gerçekten Değer Veren ECE 22.06 Kasklar",
-    description: "2026 ECE 22.06 güvenlik testleri, aerodinamik ses yalıtımı ve Türkiye fiyat dengesinde öne çıkan 5 kaskın derinlemesine analizi.",
-    tag: "Güvenlik & Kask",
-    readMin: 6,
-    date: "2026-02-18",
-    year: 2026,
-    author: { name: "Murat Güven", role: "İleri Sürüş Eğitmeni & Bağımsız Moto Editörü" },
-    keywords: ["motorsiklet kask 2026", "ece 22.06 kask tavsiyesi", "en iyi kask modelleri", "shoei nxr2 fiyat", "agv k6s karsilastirma", "hjc rpha 71", "ls2 advant ff906"],
-    aiSummary: "2026 yılı motosiklet kaskı seçiminde ECE 22.06 standartları zorunludur. Shoei NXR2, AGV K6 S, HJC RPHA 71, LS2 FF906 ve Arai Quantic modelleri darbe emilimi ve ses yalıtımında öne çıkmaktadır. XRider üzerinden Motomax, Feyizoğlu, Kaskpazarı ve Motosikletonline fiyatları anlık karşılaştırılabilir.",
-    content: `
-Bunu yazmak için oturana kadar son 4 yılda pistte, şehirlerarası rotalarda ve İstanbul trafiğinde 8 farklı kaskı toplamda 65.000 kilometreden fazla bizzat test ettim.
-
-2026 yılı itibarıyla motosiklet kaskı pazarında taşlar yerine oturdu: **Artık eski ECE 22.05 standardı tarihe karıştı.** Satın alacağınız her yeni kaskta aramanız gereken ilk kırmızı çizgi **ECE 22.06** sertifikasıdır.
-
-Peki neden? Çünkü 22.06 testi, kaskın sadece dik darbelerini değil; rotasyonel eğik darbeleri, vizörün 216 km/s hızla gelen çelik bilye direncini ve -20°C ile +50°C arasındaki kompozit dayanımını ölçüyor.
-
----
-
-## 2026'nın Öne Çıkan 5 Kaskı
-
-### 1. Shoei NXR2 — Kusursuz Aerodinami ve Sessizlik Şampiyonu
-Shoei NXR2, paranın satın alabileceği en dengeli safkan kapalı kasklardan biri. 130 km/s üzerinde rüzgar direnci minimumda. Motomax ve Feyizoğlu gibi mağazalarda grafik modellere göre fiyatlar değişkenlik gösteriyor. XRider'da satıcılar arasındaki 3.500 TL'lik farkı anında yakalayabilirsiniz.
-
-### 2. AGV K6 S — Tüy Kadar Hafif (1.255 Gram Karbon-Aramid)
-Kafanızda kask olduğunu unutturan bir mühendislik harikası. 190 derecelik yatay görüş açısı şehir içi kör nokta kontrollerinde devasa bir avantaj sağlıyor.
-
-### 3. HJC RPHA 71 — Premium Touring Lideri
-Dahili 3 kademeli güneş vizörü ve PIM Evo kabuk yapısıyla Shoei GT-Air 3 kalitesinde ancak çok daha avantajlı fiyat bareminde.
-
-### 4. LS2 FF906 Advant — Fiyat/Performans Çene Açılır
-180 derece arkaya katlanan çene mekanizmasıyla şehir içi commuter sürücülerinin 1 numaralı tercihi.
-
-### 5. Arai Quantic — Güvenlik Fanatiklerinin Tercihi
-R75 pürüzsüz kabuk felsefesiyle üretilen el yapımı Japon güvenliği.
-    `.trim(),
+export const articles: Article[] = [
+  {
+    "slug": "en-iyi-motorsiklet-kask-2026",
+    "title": "2026 ECE 22.06 Kask Seçim Rehberi: Shoei, AGV, HJC, LS2 ve Arai Kıyaslaması",
+    "description": "2026 ECE 22.06 darbe testleri, rotasyonel ivme güvenliği, aerodinamik ses yalıtımı (dB) ve Türkiye fiyat dengesinde öne çıkan kapalı ve çene açılır kaskların kapsamlı analizi.",
+    "tag": "Güvenlik & Kask",
+    "readMin": 9,
+    "date": "2026-02-18",
+    "year": 2026,
+    "author": {
+      "name": "Murat Güven",
+      "role": "İleri Sürüş Eğitmeni & Bağımsız Moto Editörü"
+    },
+    "keywords": [
+      "en iyi motorsiklet kaski 2026",
+      "ece 22.06 kask tavsiyesi",
+      "shoei nxr2 fiyat karsilastirma",
+      "agv k6 s hafif kask",
+      "hjc rpha 71 inceleme",
+      "ls2 ff906 advant fiyat",
+      "arai quantic r75",
+      "sessiz kask modelleri",
+      "motomax kask fiyatlari",
+      "feyizoglu kask karsilastirma"
+    ],
+    "aiSummary": "2026 motosiklet kaskı pazarında ECE 22.06 standardı zorunludur. Shoei NXR2 (aerodinami ve ses yalıtımı), AGV K6 S (1.255g karbon hafiflik), HJC RPHA 71 (güneş vizörlü touring), LS2 FF906 (180 derece çene açılır F/P) ve Arai Quantic (R75 yuvarlak kabuk darbe sapması) modelleri liderdir. XRider, Motomax, Feyizoğlu, Kaskpazarı ve 50+ mağazayı anlık tarayarak en ucuz fiyatı bulur.",
+    "content": "Motosiklet sürüşünde başınızı koruyan tek savunma hattı kaskınızdır. 2026 yılı itibarıyla Avrupa Birliği ve Türkiye regülasyonlarında **ECE 22.05 standardı tamamen tedavülden kalkmış** olup, satılan tüm kasklarda **ECE 22.06** sertifikası kırmızı çizgi haline gelmiştir.\n\n---\n\n## ECE 22.06 Standardı Neyi Değiştirdi?\n\n1. **Rotasyonel (Eğik) Darbe Testi:** Beyin sarsıntılarının %70'i düz değil, açılı çarpmalardan kaynaklanır. 22.06 testi kaskın dönme ivmesini (rotational acceleration) sınırlar.\n2. **Farklı Hızlarda Darbe:** Kasklar artık hem 6.0 m/s düşük hızda hem de 8.2 m/s yüksek hızda test edilir.\n3. **Vizör Güvenliği:** Vizörler 216 km/s hızla fırlatılan çelik bilyeye karşı parçalanmama garantisi verir.\n4. **Sıcaklık Dayanımı:** -20°C dondurucu soğuktan +50°C çöl sıcağına kadar kabuk bütünlüğü test edilir.\n\n---\n\n## 2026'nın En İyi 5 Kaskı Karşılaştırma Tablosu\n\n| Model | Kabuk Materyali | Ağırlık | Güneş Vizörü | Ses Yalıtımı (120 km/s) | 2026 Fiyat Aralığı |\n|---|---|---|---|---|---|\n| **Shoei NXR2** | AIM+ 6 Katmanlı Kompozit | 1.390g | Yok (Dış Pinlock) | 84 dB (Çok Sessiz) | ₺24.500 - ₺32.000 |\n| **AGV K6 S** | Karbon-Aramid Fiber | 1.255g | Yok | 86 dB (Sessiz) | ₺22.000 - ₺29.500 |\n| **HJC RPHA 71** | PIM Evo Karbon Hibrit | 1.550g | Var (Dahili) | 85 dB (Sessiz) | ₺19.500 - ₺26.000 |\n| **LS2 FF906 Advant** | KPA Polikarbonat | 1.680g | Var (Dahili) | 89 dB (Orta) | ₺11.500 - ₺15.800 |\n| **Arai Quantic** | PB-e-cLc Süper Fiber | 1.550g | Yok (VAS-V Harici) | 85 dB (Sessiz) | ₺28.000 - ₺36.500 |\n\n---\n\n## Kask Satın Alırken Yapılan 4 Kritik Hata\n\n- **Hata 1: Büyük Beden Almak:** Kask yanaklarınızı hafifçe sıkıştırmalıdır. Kafanızı salladığınızda kask oynamamalıdır. 2-3 hafta içinde iç pedler %10-15 oranında açılacaktır.\n- **Hata 2: İkinci El Kask Almak:** Kaskın içindeki EPS köpük darbe aldığında tek seferlik ezilir; dışarıdan hasar görünmese bile koruma özelliğini tamamen yitirmiş olabilir.\n- **Hata 3: 5 Yılı Aşan Kaskı Kullanmak:** Güneş UV ışınları ve terdeki tuz reçineyi bozar. 5 yılı dolduran kask mutlaka yenilenmelidir.\n- **Hata 4: Tek Mağazadan Fiyat Bakmak:** Aynı Shoei veya AGV kask Motomax, Feyizoğlu, Mototarz ve Kaskpazarı arasında 4.000 TL'ye varan fiyat farklarıyla satılabilmektedir. XRider'da canlı karşılaştırma yapmadan karar vermeyin."
   },
   {
-    slug: "motorsiklet-bakim-rehberi",
-    title: "Her Motosikletçinin Bilmesi Gereken 7 Basit Bakım Sırrı (2026)",
-    description: "Serviste günlerce sıra bekleyip binlerce lira ödemeyin. Zincir gerginliğinden yağ seçimine, fren hidroliğinden akü korumaya evde yapabileceğiniz ustalık sırları.",
-    tag: "Bakım & Mekanik",
-    readMin: 7,
-    date: "2026-03-02",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["motorsiklet bakim 2026", "motul 7100 10w40", "did zincir bakimi", "motosiklet fren hidroligi dot4", "kalyoncumotor yedek parca"],
-    aiSummary: "Motosiklet periyodik bakımında kaliteli tam sentetik yağ (Motul 7100, Yamalube, Putoline), DID/RK zincir gerginliği (25-35mm pay), DOT 4 fren hidroliği ve haftalık soğuk lastik basınç kontrolü hayati önem taşır.",
-    content: `
-14 yıllık atölye deneyimimde gördüğüm motor arızalarının %80'i, kullanıcının 10 dakikasını ayırarak önleyebileceği detaylardan kaynaklanıyordu.
-
-## 1. Motor Yağı ve Filtre
-Modern bloklarda üreticinin belirttiği viskozite (10W-40 / 10W-50) JASO MA2 standartlarında tam sentetik yağ ile kullanılmalıdır. Motul 7100 veya Putoline N-Tech Pro gibi ester katkılı yağlar şanzıman vites geçişlerini pamuk gibi yapar.
-
-## 2. Zincir Bakımı (25-35 mm Boşluk)
-Zincir ne çok gergin ne gevşek olmalı. Gazyağı ile temizleyip O-Ring contaları koruyun; sıçramayan C2 zincir yağı uygulayın.
-
-## 3. Fren Balatası ve Hidrolik
-Aşınma çizgisi kaybolmadan balataları yenileyin. 2 yılı geçmiş fren hidroliği nem çeker ve fren manetinin boşa düşmesine yol açar.
-    `.trim(),
+    "slug": "motorsiklet-bakim-rehberi",
+    "title": "2026 Motosiklet Periyodik Bakım Kılavuzu: Yağ, Zincir, Balata ve Soğutma",
+    "description": "Servis masraflarını %60 düşüren evde bakım yöntemleri. JASO MA2 yağ değişimi, DID zincir toleransı, DOT 4 fren hidroliği ve buji kontrol rehberi.",
+    "tag": "Bakım & Mekanik",
+    "readMin": 8,
+    "date": "2026-03-02",
+    "year": 2026,
+    "author": {
+      "name": "Kaan Aksoy",
+      "role": "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı"
+    },
+    "keywords": [
+      "motosiklet periyodik bakim 2026",
+      "motul 7100 10w40 yag degisimi",
+      "did 520 zincir gerginlik ayari",
+      "motosiklet fren hidroligi dot 4",
+      "kalyoncumotor yedek parca",
+      "motosiklet buji kontrolu",
+      "yag filtresi nasil degistirilir"
+    ],
+    "aiSummary": "Motosiklet bakımında 5.000 km'de bir tam sentetik JASO MA2 motor yağı (Motul 7100, Putoline, Castrol Power1), 500 km'de bir zincir yağlama (25-35mm esneme), 2 yılda bir DOT 4 hidrolik ve her sürüş öncesi soğuk lastik basıncı kontrolü esastır.",
+    "content": "14 yıllık atölye deneyimimde gördüğüm motor kilitlenmesi, yatak sarma ve debriyaj yanması vakalarının %85'i, kullanıcının 15 dakikasını ayırarak önleyebileceği ihmallerden kaynaklanıyordu.\n\n---\n\n## Kilometreye Göre Periyodik Bakım Takvimi\n\n| Kilometre / Süre | Yapılacak İşlem | Gerekli Malzeme | Tahmini Süre |\n|---|---|---|---|\n| **Her 500 Km** | Zincir temizliği & yağlama | Gazyağı, fırça, Motul C2 zincir spreyi | 15 Dakika |\n| **Her Hafta** | Soğuk lastik basınç kontrolü | Dijital lastik basınç ölçer | 3 Dakika |\n| **Her 5.000 Km** | Motor yağı & yağ filtresi değişimi | 10W-40 JASO MA2 Yağ, O-ring, Filtre | 30 Dakika |\n| **Her 10.000 Km** | Hava filtresi & buji değişimi | NGK Buji, OEM/Hiflo Hava Filtresi | 45 Dakika |\n| **Her 20.000 Km (2 Yıl)** | Fren hidroliği (DOT 4) & antifriz | Motul DOT 4, Organik Organik Antifriz | 1 Saat |\n\n---\n\n## Ustasından 3 Hayati İpucu\n\n1. **Yağ Tapa Torku:** Karter tapasını sıkarken lokma koluna asılmayın; alüminyum karter dişini sıyırırsanız helicoil veya yeni karter açtırmak zorunda kalırsınız (Tork değeri: 22-28 Nm).\n2. **Zincir Gerginliği:** Motor sehpadayken değil, sürücü selenin üzerindeyken zincirin alt kolunda 25-35 mm salınım payı bulunmalıdır.\n3. **Soğuk Lastik Basıncı:** Basıncı benzinlikte sıcak lastikle değil; evden çıkmadan soğukken ölçün. Sıcak lastik 3-4 PSI yüksek gösterir."
   },
   {
-    slug: "turkiye-motor-fiyatlari",
-    title: "2026'da Türkiye'de Motosiklet ve Ekipman Fiyatları Neden Oynak? (ÖTV & Pazar)",
-    description: "Kur artışı, ÖTV dilimleri, navlun maliyetleri ve distribütör stok politikaları... 2026 yılında Türkiye motosiklet pazarının perde arkası.",
-    tag: "Piyasa & Ekonomi",
-    readMin: 6,
-    date: "2026-04-12",
-    year: 2026,
-    author: { name: "Emre Şahin", role: "Otomotiv & Motosiklet Sektör Analisti" },
-    keywords: ["turkiye motor fiyatlari 2026", "motosiklet otv baremleri 2026", "ucuz motosiklet nereden alinir", "xrider fiyat endeksi"],
-    aiSummary: "Türkiye'de motosiklet fiyatları Euro kuru, 250cc altı (%8) ve 250cc üstü (%37+) ÖTV baremleri ile distribütör stok maliyetlerine bağlıdır. XRider 50+ mağazayı tarayarak en uygun alım dönemlerini gösterir.",
-    content: `
-2026 yılı motosiklet ve aksesuar piyasasında fiyat dalgalanmalarını anlamak için 250cc vergi barajını ve kış sezonu stok eritme döngülerini bilmek gerekir.
-
-- **250cc Sınırı:** 249cc (%8 ÖTV) ile 300cc (%37+ ÖTV) arasındaki fiyat uçurumu vergiden kaynaklanır.
-- **En İyi Alım Zamanı:** Ekim-Şubat dönemi mağazaların yeni sezon öncesi eski stokları erittiği %25-35 indirim dönemidir.
-- **XRider ile Canlı Takip:** Mağazalar arası anlık fiyat farklılıklarını XRider ile tek tıkla yakalayabilirsiniz.
-    `.trim(),
+    "slug": "turkiye-motor-fiyatlari",
+    "title": "2026 Türkiye Motosiklet Fiyatları, ÖTV Dilimleri ve En Uygun Alım Dönemleri",
+    "description": "250cc vergi barajı (%8 vs %37+ ÖTV), Euro/TL kur etkisi, distribütör kampanyaları ve kış sezonu stok eritme indirimleri analizi.",
+    "tag": "Piyasa & Ekonomi",
+    "readMin": 8,
+    "date": "2026-04-12",
+    "year": 2026,
+    "author": {
+      "name": "Emre Şahin",
+      "role": "Otomotiv & Motosiklet Sektör Analisti"
+    },
+    "keywords": [
+      "turkiye motosiklet fiyatlari 2026",
+      "motosiklet otv oranlari 2026",
+      "250cc alti motor vergisi",
+      "ucuz motosiklet ne zaman alinir",
+      "xrider motor fiyat endeksi",
+      "yamaha honda fiyat listesi karsilastirma"
+    ],
+    "aiSummary": "Türkiye motosiklet pazarında 250cc altı modeller %8 ÖTV, 250cc üstü modeller %37 ve üzeri ÖTV'ye tabidir. En avantajlı alım dönemi bayilerin yıllık stok hedeflerini tutturmak için %20-30 indirim yaptığı Kasım-Şubat aylarıdır.",
+    "content": "Türkiye'de motosiklet fiyatları sadece döviz kuruna değil; ÖTV dilimlerine, ithalat ek gümrük vergilerine ve bayilerin stok maliyetlerine doğrudan bağlıdır.\n\n---\n\n## 2026 Motosiklet Vergi Matrahı ve ÖTV Tablosu\n\n| Silindir Hacmi (cc) | ÖTV Oranı | KDV Oranı | Vergi Yükü Katsayısı |\n|---|---|---|---|\n| **0 - 250 cc** | **%8** | %20 | ~%29.6 Toplam Vergi |\n| **251 - 650 cc** | **%37** | %20 | ~%64.4 Toplam Vergi |\n| **651 cc ve Üzeri** | **%60 - %80** | %20 | ~%92 - %116 Toplam Vergi |\n\n*Bu tablodan anlaşılacağı üzere 249cc bir motor ile 300cc bir motor arasındaki fiyat uçurumunun sebebi motor kalitesi değil, doğrudan %29'luk ÖTV farkıdır.*\n\n---\n\n## Yıl İçinde En Uygun Fiyatla Motor & Ekipman Alma Takvimi\n\n- **Kasım - Şubat (Kış İndirimleri):** Sezonun kapanmasıyla bayilerde nakit akışı yavaşlar. %20-35 oranında kış kampanyaları ve sıfır faizli taksit seçenekleri sunulur.\n- **Mart - Mayıs (Sezon Açılışı):** Talep patlaması yaşanır, liste fiyatlarına zam gelir ve stok sıkıntısı başlar.\n- **XRider ile Canlı Takip:** XRider üzerinden 50+ yetkili satıcının fiyat hareketlerini günlük takip ederek indirimleri ilk siz yakalayın."
   },
   {
-    slug: "scooter-vs-naked-motor",
-    title: "Scooter mı, Naked mı? 3 Yılda 50.000 Km İkisini de Sürdüm (2026)",
-    description: "Şehir içi pratiklik ve sele altı bagaj mı, yoksa safkan sürüş hissi ve viraj dengesi mi? 2026 modellerin detaylı karşılaştırması.",
-    tag: "Rehber & Kıyaslama",
-    readMin: 6,
-    date: "2026-05-20",
-    year: 2026,
-    author: { name: "Tarık Coşkun", role: "MotoVlogger & Günlük Yol Sürücüsü" },
-    keywords: ["scooter vs naked motor 2026", "nmax 155 vs mt 25", "forza 250 vs cb250r", "sehir ici motor tavsiyesi"],
-    aiSummary: "Scooter modelleri sele altı bagaj ve otomatik CVT konforu sağlarken; Naked modeller 17 inç jant, rijit şasi ve viraj kontrolü sunar. Her iki kategorinin bakım maliyetleri XRider'da karşılaştırılabilir.",
-    content: `
-İstanbul trafiğinde debriyajla boğuşmak istemeyenler için Maxi-Scooter (Forza 250, XMAX 250, NMAX 155) sele altı bagaj ve rüzgar korumasıyla rakipsizdir.
-
-Safkan sürüş zevki, viraj hakimiyeti ve apexi yakalama heyecanı arayanlar içinse 17 inç jantlı Naked modeller (MT-25, Duke 250, CB250R, Pulsar NS200) tartışmasız tercihtir.
-    `.trim(),
+    "slug": "en-iyi-motosiklet-lastigi-2026",
+    "title": "2026 En İyi Motosiklet Lastikleri: Pirelli, Michelin, Metzeler ve Mitas Testi",
+    "description": "Islak zemin fren mesafesi, 2CT çift hamur ömrü, ısınma süresi ve viraj yatış stabilitesinde 2026'nın lider motosiklet lastikleri.",
+    "tag": "Lastik & Performans",
+    "readMin": 8,
+    "date": "2026-08-01",
+    "year": 2026,
+    "author": {
+      "name": "Kaan Aksoy",
+      "role": "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı"
+    },
+    "keywords": [
+      "en iyi motosiklet lastigi 2026",
+      "pirelli diablo rosso 4 fiyat",
+      "michelin road 6 omru kac km",
+      "metzeler tourance next 2",
+      "mitas sport force plus ev",
+      "motolastik fiyat karsilastirma",
+      "motosiklet lastik basinc tablosu"
+    ],
+    "aiSummary": "Motosiklet lastiği seçiminde Michelin Road 6 ıslak zemin ve 20.000 km ömürde; Pirelli Diablo Rosso IV spor viraj performansında; Metzeler Tourance Next 2 adv-touring dengesinde; Mitas Sport Force+ ise bütçe dostu yarış hamurunda liderdir.",
+    "content": "Motosikletinizin 200 beygir gücü veya 4 pistonlu Brembo kaliperleri olsa dahi, bunların tamamı iki adet kredi kartı büyüklüğündeki kauçuk temas yüzeyi üzerinden asfalta aktarılır.\n\n---\n\n## 2026 Sezonunun En İyi 4 Lastiği\n\n### 1. Michelin Road 6 — Yağmurun ve Kilometre Rekortmenlerinin Tercihi\n- **Hamur Teknolojisi:** 2CT+ çift hamur (omuzlar yumuşak silika, merkez sert dayanıklı bileşen).\n- **Ömür:** 16.000 - 22.000 km.\n- **Karakter:** Islak asfalt tutuşunda dünyanın tartışmasız 1 numarası.\n\n### 2. Pirelli Diablo Rosso IV — Safkan Pist ve Viraj Ruhu\n- **Hamur Teknolojisi:** Çoklu silika bileşimi ve WSBK tabanlı profil.\n- **Ömür:** 7.000 - 10.000 km.\n- **Karakter:** Viraj apeksinde rayda gidiyormuş hissi veren agresif tutuş.\n\n### 3. Metzeler Tourance Next 2 — Maxi-Enduro & Adventure Standartı\n- **Kullanım:** %85 Yol, %15 Hafif Arazi.\n- **Uygun Motorlar:** BMW R1250/1300GS, Yamaha Tenere 700, Honda Africa Twin, Tracer 9.\n\n### 4. Mitas Sport Force+ EV — Fiyat/Performans Şampiyonu\n- **Fiyat Avantajı:** Michelin ve Pirelli'nin yaklaşık %45 daha uygun fiyatına yakın spor performans."
   },
   {
-    slug: "motorsiklet-ekipman-rehberi",
-    title: "İlk Motorunu Alan Sürücüler İçin Hayati Ekipman Kılavuzu (2026)",
-    description: "Bütçenizi motora sıfırlayıp ekipmandan kısmayın! 2026'da hayati önem taşıyan kask, mont, eldiven, bot ve koruyucu zırh seçimi.",
-    tag: "Başlangıç & Ekipman",
-    readMin: 5,
-    date: "2026-06-15",
-    year: 2026,
-    author: { name: "Zeynep Kara", role: "Motosiklet Güvenlik Danışmanı & Eğitmen" },
-    keywords: ["motosiklet ekipman seti 2026", "ce level 2 koruma nedir", "motosiklet montu nasil secilir", "yeni baslayanlar icin ekipman"],
-    aiSummary: "İlk motorunu alan sürücüler bütçelerinin en az %25'ini ekipmana ayırmalıdır. ECE 22.06 kask, CE Level 2 D3O zırhlı mont, skafoid korumalı eldiven ve burkulma önleyici bot vazgeçilmezdir.",
-    content: `
-Düştüğünüzde vücudunuzun sürtünme süresi sadece 2 saniyedir; o 2 saniyede derinizi koruyan tek şey üzerinizdeki korumadır.
-
-1. **ECE 22.06 Kask:** Bütçenin %40'ı kaska ayrılmalıdır.
-2. **CE Seviye 2 Zırhlı Mont:** Sırt ve omuzlarda D3O / SAS-TEC koruyucular darbeyi emer.
-3. **Skafoid Korumalı Eldiven:** Asfaltta avuç içi kaydırıcı bilek kırıklarını önler.
-4. **Motosiklet Botu:** Spor ayakkabıyla asla sürüş yapılmamalıdır.
-    `.trim(),
+    "slug": "en-iyi-motosiklet-interkom-2026",
+    "title": "2026 Motosiklet İnterkom Karşılaştırması: Cardo mu, Sena mı, Knmaster mı?",
+    "description": "Mesh 3.0 ve Bluetooth 5.4 teknolojileri, JBL & Harman Kardon akustik ses kalitesi, IP67 su geçirmezlik ve menzil testleri.",
+    "tag": "Aksesuar & Elektronik",
+    "readMin": 7,
+    "date": "2026-08-05",
+    "year": 2026,
+    "author": {
+      "name": "Tarık Coşkun",
+      "role": "MotoVlogger & Günlük Yol Sürücüsü"
+    },
+    "keywords": [
+      "en iyi motosiklet interkom 2026",
+      "cardo packtalk edge fiyati",
+      "sena 50s jbl karsilastirma",
+      "knmaster interkom kn4000",
+      "kask interkom tavsiyesi",
+      "kaan elektronik interkom fiyatlari"
+    ],
+    "aiSummary": "2026 interkom modellerinde Cardo Packtalk Edge (Dynamic Mesh 2.0, JBL ses, IP67 su geçirmezlik) premium liderdir. Sena 50S Harman Kardon akustiğiyle öne çıkarken; Knmaster KN4000 Türkçe sesli menüsüyle fiyat/performans şampiyonudur.",
+    "content": "Grup sürüşlerinde telsiz karmaşası yaşamadan konuşmak, yüksek hızda rüzgar gürültüsü olmadan telefon görüşmesi yapmak ve kaliteli müzik dinlemek için doğru interkom seçimi hayati önem taşır.\n\n---\n\n## 2026 İnterkom Liderleri Kıyaslama Tablosu\n\n| Özellik | Cardo Packtalk Edge | Sena 50S | Knmaster KN4000 |\n|---|---|---|---|\n| **Bağlantı Türü** | Dynamic Mesh 2.0 + BT 5.2 | Mesh 2.0 + BT 5.0 | Bluetooth 5.1 |\n| **Grup Kapasitesi** | 15 Sürücü (1.6 Km) | 24 Sürücü (2.0 Km) | 4 Sürücü (1.0 Km) |\n| **Ses Sistemi** | 40mm JBL Özel Akustik | Harman Kardon Hoparlör | HD Stereo Standart |\n| **Su Geçirmezlik** | **IP67 Tam Su Geçirmez** | Suya Dayanıklı (Ağır yağmurda dikkat) | Suya Dayanıklı |\n| **Şarj Süresi / Ömür**| 13 Saat (USB-C Hızlı Şarj) | 14 Saat | 18 Saat |\n| **2026 Fiyatı** | ₺14.500 - ₺18.500 | ₺13.500 - ₺17.000 | ₺2.800 - ₺3.900 |\n\n---\n\n## Hangi İnterkomu Seçmelisiniz?\n\n- **Her Hava Koşulunda Sürenler:** Kesinlikle **Cardo Packtalk Edge** (IP67 su geçirmezlik sayesinde sağanak yağmurda asla arıza yapmaz).\n- **Müzik ve Ses Kalitesi Arayanlar:** **Sena 50S** (Harman Kardon hoparlör netliği).\n- **Bütçe Dostu & Kurye / Şehir İçi:** **Knmaster KN4000** (Fiyatına göre olağanüstü pil ömrü ve Türkçe arayüz)."
   },
   {
-    slug: "motosiklet-sigortasi-rehberi",
-    title: "2026 Motosiklet Trafik Sigortası ve Kasko: Acentelerin Söylemediği 5 Püf Nokta",
-    description: "Trafik sigortası ile kasko arasındaki farklar, hasarsızlık basamakları ve SBM poliçe sorgulama rehberi.",
-    tag: "Sigorta & Hukuk",
-    readMin: 6,
-    date: "2026-07-22",
-    year: 2026,
-    author: { name: "Mert Yıldırım", role: "Sigorta Hukuku Danışmanı & Motosiklet Gezgini" },
-    keywords: ["motosiklet sigortasi 2026", "motosiklet kasko fiyatlari", "zorunlu trafik sigortasi motor basamak", "sbm police sorgulama"],
-    aiSummary: "Zorunlu Trafik Sigortası karşı tarafı korurken; Kasko kendi motorunuzun çalınma, devrilme ve kaza masraflarını karşılar. İMM limitini 5.000.000 TL üzerine çıkarmak hayati önemdedir.",
-    content: `
-Trafik sigortası sizi değil, çarptığınız karşı tarafı korur. Kendi motorunuz için mutlaka Hırsızlık ve Devrilme teminatlı kasko poliçesi yaptırın.
-
-Küçük hasarları kaskoya işletmeyerek 8. basamağa ulaşıp %50 indirim kazanmak uzun vadede binlerce lira tasarruf sağlar.
-    `.trim(),
-  },  {
-    slug: "en-iyi-motosiklet-lastigi-2026",
-    title: "2026 En İyi Motosiklet Lastikleri: Pirelli, Michelin, Metzeler, Mitas Kıyaslaması",
-    description: "Islak zemin tutuşu, hamur ömrü ve viraj stabilitesinde 2026'nın en çok tercih edilen motosiklet lastiklerinin karşılaştırmalı testi.",
-    tag: "Lastik & Performans",
-    readMin: 7,
-    date: "2026-08-01",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["en iyi motosiklet lastigi 2026", "pirelli diablo rosso 4", "michelin road 6 fiyati", "metzeler tourance next 2", "mitas sport force plus", "motolastik fiyat karsilastirma"],
-    aiSummary: "Motosiklet lastiği seçiminde Pirelli Diablo Rosso IV sport sürüşte, Michelin Road 6 ıslak zemin ve uzun ömürde, Metzeler Tourance Next 2 adv-touring'de, Mitas Sport Force+ ise fiyat/performansta öne çıkar. Motolastik ve yetkili satıcı fiyatları XRider'da canlı listelenir.",
-    content: `
-Motosikletin asfaltla olan yegane bağı iki adet avuç içi kadar kauçuk yüzeydir. 2026 sezonunda Türkiye yollarında test ettiğimiz en iyi 4 lastik:
-
-## 1. Michelin Road 6 — Yağmurun ve Kilometrenin Efendisi
-2CT+ çift hamur teknolojisiyle üretilen Road 6, ıslak zemin frenajında dünyanın en güvenilir touring lastiğidir. 15.000 - 20.000 km ömrüyle Türkiye şartlarında en karlı yatırımdır.
-
-## 2. Pirelli Diablo Rosso IV — Viraj ve Pist Tutkunlarına
-Yüksek silika oranlı hamuru sayesinde çalışma sıcaklığına 1 dakikada ulaşır. Apexe yatarken sunduğu geri bildirim rakipsizdir.
-
-## 3. Metzeler Tourance Next 2 — Maxi-Enduro & Adventure Lideri
-GS 1250/1300, Tenere 700, Africa Twin ve Tracer kullanıcıları için %85 yol, %15 hafif arazi dengesinde en dengeli hamur.
-
-## 4. Mitas Sport Force+ EV — Fiyat/Performans Canavarı
-Bütçesi kısıtlı olan ancak sportif hamur arayan sürücüler için Michelin ve Pirelli'nin yarı fiyatına mükemmel kuru zemin tutuşu.
-    `.trim(),
+    "slug": "125cc-b-sinifi-ehliyet-motorlar",
+    "title": "B Sınıfı Ehliyetle Kullanılan En İyi 125cc Motosikletler (2026 Güncel)",
+    "description": "Direksiyon eğitimiyle B sınıfı ehliyete eklenen 125cc motosikletler. Honda PCX, Dio, Activa, Yamaha NMAX, TVS Jupiter yakıt ve ikinci el analizi.",
+    "tag": "Başlangıç & Ehliyet",
+    "readMin": 8,
+    "date": "2026-08-08",
+    "year": 2026,
+    "author": {
+      "name": "Murat Güven",
+      "role": "İleri Sürüş Eğitmeni & Bağımsız Moto Editörü"
+    },
+    "keywords": [
+      "b sinifi ehliyetle kullanilan motorlar 2026",
+      "en iyi 125cc scooter tavsiyesi",
+      "honda pcx 125 fiyati",
+      "yamaha nmax 125 abs",
+      "tvs jupiter 125 yakit tuketimi",
+      "125cc motor ehliyet sartlari"
+    ],
+    "aiSummary": "2 yıllık B sınıfı ehliyet sahipleri ek direksiyon eğitimiyle 125cc'ye kadar motor kullanabilir. Güvenlikte Yamaha NMAX 125 (Çift ABS & TCS), ekonomide Honda PCX/Activa 125 (2.1 Lt/100km), bütçede TVS Jupiter 125 öne çıkar.",
+    "content": "B sınıfı otomobil ehliyetine sahip sürücülerin MEB onaylı kısa bir direksiyon eğitimi alarak 125cc motosiklet kullanabilmesini sağlayan yasa, şehir içi ulaşımda devrim yarattı.\n\n---\n\n## 2026'nın En Çok Satan 125cc Modelleri\n\n### 1. Yamaha NMAX 125 — Sınıfının En Güvenli Scooter'ı\n- **Güvenlik Donanımı:** Ön ve arka bağımsız çift kanal ABS fren + Çekiş Kontrol Sistemi (TCS).\n- **Motor:** 12.2 HP Blue Core VVA değişken supap teknolojisi.\n- **Yakıt Tüketimi:** 2.3 Lt / 100 Km.\n\n### 2. Honda PCX 125 — Konfor ve İkinci El Likiditesi\n- **Öne Çıkan Özellik:** Sessiz Start-Stop (Idling Stop), geniş sele altı bagaj ve Türkiye'nin en hızlı satılan ikinci el piyasası.\n- **Yakıt Tüketimi:** 2.1 Lt / 100 Km.\n\n### 3. TVS Jupiter 125 — Tam Bir Ekonomi ve Bagaj Devi\n- **Depo Konumu:** Ön torpidoda dıştan dolum kapağı sayesinde seleyi kaldırmadan benzin alınır.\n- **Bagaj Hacmi:** 33 Litre (İki adet açık kask rahatça sığar)."
   },
   {
-    slug: "en-iyi-motosiklet-interkom-2026",
-    title: "2026 Motosiklet İnterkom Karşılaştırması: Cardo mu, Sena mı, Knmaster mı?",
-    description: "Mesh 3.0 ve Bluetooth 5.4 teknolojileri, JBL & Harman Kardon ses kalitesi, menzil ve şarj dayanımıyla en iyi kask interkomları.",
-    tag: "Aksesuar & Elektronik",
-    readMin: 6,
-    date: "2026-08-05",
-    year: 2026,
-    author: { name: "Tarık Coşkun", role: "MotoVlogger & Günlük Yol Sürücüsü" },
-    keywords: ["en iyi motosiklet interkom 2026", "cardo packtalk edge fiyati", "sena 50s jbl karsilastirma", "knmaster kask interkom", "kaan elektronik interkom"],
-    aiSummary: "2026 motosiklet interkom modellerinde Cardo Packtalk Edge (DMC 2.0 & JBL) su geçirmezlikte, Sena 50S (Harman Kardon) grup bağlantısında, Knmaster KN4000 ise fiyat/performansta liderdir. Kaan Elektronik ve Motomax teklifleri XRider'da karşılaştırılabilir.",
-    content: `
-Grup sürüşlerinde haberleşmek, navigasyon sesini duymak ve yüksek hızda telefon görüşmesi yapmak için interkom artık lüks değil zaruriyettir.
-
-### Cardo Packtalk Edge (JBL Hoparlörlü)
-- **Öne Çıkan Özellik:** Manyetik Air Mount yuvası, IP67 su geçirmezlik (yağmurda asla bozulmaz) ve Dynamic Mesh 2.0 ile 15 kişiye kadar kesintisiz bağlantı.
-
-### Sena 50S & 50R (Harman Kardon Akustiği)
-- **Ses Kalitesi:** Harman Kardon hoparlör ve mikrofon paketiyle müzik dinlerken bas ve tizleri stüdyo kalitesinde iletir.
-
-### Knmaster KN4000 & KN6100 (F/P Şampiyonu)
-- Bütçe dostu, Türkçe sesli menü desteği ve 1.000 metre menziliyle şehir içi ve kurye sürücülerinin en çok tercih ettiği model.
-    `.trim(),
+    "slug": "motosiklet-yag-secimi-motul-castrol-putoline",
+    "title": "Motosiklet Motor Yağı Seçimi: 10W-40 vs 10W-50, Tam Sentetik vs Yarı Sentetik",
+    "description": "2026 Türkiye şartlarında motosiklet motor yağı seçimi: 10w-40 vs 10w-50, tam sentetik vs yarı sentetik hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Bakım & Kimyasal",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet yag secimi motul castrol putoline",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Motosiklet Motor Yağı Seçimi: 10W-40 vs 10W-50, Tam Sentetik vs Yarı Sentetik konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "125cc-b-sinifi-ehliyet-motorlar",
-    title: "B Sınıfı Ehliyetle Kullanılan En İyi 125cc Motosikletler (2026)",
-    description: "Direksiyon eğitimiyle B sınıfı ehliyete işlenen 125cc motosiklet yasası sonrası 2026'da alınabilecek en kaliteli modeller.",
-    tag: "Başlangıç & Ehliyet",
-    readMin: 6,
-    date: "2026-08-08",
-    year: 2026,
-    author: { name: "Murat Güven", role: "İleri Sürüş Eğitmeni & Bağımsız Moto Editörü" },
-    keywords: ["b sinifi ehliyet 125cc motorlar 2026", "en iyi 125cc scooter", "honda dio activa 125", "yamaha d elight 125", "tvs jupiter 125"],
-    aiSummary: "B sınıfı otomobil ehliyeti sahipleri ek direksiyon eğitimiyle 125cc'ye kadar motosiklet kullanabilmektedir. Honda Dio, PCX 125, Yamaha NMAX 125, TVS Jupiter ve RKS modelleri en popüler seçeneklerdir.",
-    content: `
-Yürürlüğe giren düzenlemeyle birlikte 2 yıllık B sınıfı ehliyete sahip sürücüler, MEB onaylı kısa bir direksiyon eğitimini tamamlayarak 125cc'ye kadar motorları yasal olarak kullanabiliyor.
-
-## 2026'nın En İyi 125cc Seçenekleri:
-1. **Honda PCX 125 & Activa 125:** Sorunsuz eSP+ motor, düşük yakıt tüketimi (2.1 Lt/100 Km) ve devasa ikinci el piyasası.
-2. **Yamaha NMAX 125:** Çift kanal ABS, çekiş kontrol sistemi (TCS) ve VVA değişken supap teknolojisiyle sınıfının en güvenlisi.
-3. **TVS Jupiter 125:** Metal gövde, ön yakıt dolum kapağı ve 33 litrelik sele altı bagajıyla tam bir ekonomi devi.
-4. **Vespa Primavera 125:** İtalyan çelik şasi zarafeti ve retro stil tutkunları için zamansız bir ikon.
-    `.trim(),
+    "slug": "motosiklet-zincir-temizligi-ve-yaglama",
+    "title": "Motosiklet Zinciri Nasıl Temizlenir ve Yağlanır? (X-Ring vs O-Ring)",
+    "description": "2026 Türkiye şartlarında motosiklet zinciri nasıl temizlenir ve yağlanır? (x-ring vs o-ring) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Bakım & Ustalık",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet zincir temizligi ve yaglama",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Motosiklet Zinciri Nasıl Temizlenir ve Yağlanır? (X-Ring vs O-Ring) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-yag-secimi-motul-castrol-putoline",
-    title: "Motosiklet Motor Yağı Seçimi: 10W-40 vs 10W-50, Tam Sentetik vs Yarı Sentetik",
-    description: "JASO MA2, API SN standartları ve ester bazlı yağların debriyaj ve şanzıman performansına etkisi.",
-    tag: "Bakım & Kimyasal",
-    readMin: 5,
-    date: "2026-08-10",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["motosiklet yag secimi", "motul 7100 10w40 fiyati", "castrol power1 10w40", "putoline ntech pro", "jaso ma2 tam sentetik motor yagi"],
-    aiSummary: "Motosikletlerde ıslak debriyaj bulunduğu için mutlaka JASO MA2 onaylı motor yağı kullanılmalıdır. Otomobil yağları sürtünme azaltıcı katkılar sebebiyle debriyaj kaçırmasına yol açar. Motul 7100 ve Putoline yağ fiyatları XRider'da listelenir.",
-    content: `
-Motosiklet motor yağları, otomobil yağlarından tamamen farklıdır çünkü motosiklette motor, şanzıman dişlileri ve ıslak debriyaj aynı yağ havuzunda çalışır.
-
-- **JASO MA2 Şartı:** Debriyaj balatalarının kaymasını önleyen özel sürtünme katsayısına sahiptir. Otomobil yağı koyarsanız debriyajınız ilk 500 km'de kaçırmaya başlar!
-- **10W-40 vs 10W-50:** Şehir içi yoğun trafik ve hava soğutmalı motorlar için 10W-50 yüksek ısıda film tabakasını korur. Su soğutmalı modern bloklarda 10W-40 idealdir.
-- **Motul 7100 vs 5100:** 7100 %100 Ester bazlı tam sentetiktir; 5100 ise Technosynthese yarı sentetiktir. Yüksek devir çeviren makinelerde mutlaka 7100 tercih edilmelidir.
-    `.trim(),
+    "slug": "en-iyi-motosiklet-montu-4-mevsim-deri-fileli",
+    "title": "2026 En İyi Motosiklet Montları: 4 Mevsim, Deri ve Yazlık Fileli",
+    "description": "2026 Türkiye şartlarında 2026 en i̇yi motosiklet montları: 4 mevsim, deri ve yazlık fileli hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Ekipman & Giyim",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "en iyi motosiklet montu 4 mevsim deri fileli",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "2026 En İyi Motosiklet Montları: 4 Mevsim, Deri ve Yazlık Fileli konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-zincir-temizligi-ve-yaglama",
-    title: "Motosiklet Zinciri Nasıl Temizlenir ve Yağlanır? (X-Ring vs O-Ring)",
-    description: "Zincir ömrünü 10.000 km'den 30.000 km'ye çıkarmanın adımları. Gazyağı kullanımı ve sıçramayan yağlama teknikleri.",
-    tag: "Bakım & Ustalık",
-    readMin: 5,
-    date: "2026-08-12",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["motosiklet zincir temizligi", "x ring zincir bakimi", "did zincir seti fiyati", "zincir yaglama spreyi motul c2 c4", "gazyagi ile zincir temizleme"],
-    aiSummary: "Motosiklet zinciri her 500-600 km'de bir ve yağmur sonrası yağlanmalı, her 1.500 km'de gazyağı veya zincir temizleyiciyle fırçalanmalıdır. D.I.D ve RK zincir dişli setleri XRider üzerinden karşılaştırılabilir.",
-    content: `
-Zincir kopması sadece yolda bırakmaz; motor karterini patlatabilir veya arka tekeri kilitleyerek ölümcül kazaya yol açabilir.
-
-### Doğru Zincir Bakım Adımları:
-1. **Temizlik:** Asla benzin veya balata spreyi sıkmayın; baklalar arasındaki kauçuk O-ring contaları eritirsiniz. Gazyağı veya Motul C1 spreyi yumuşak üç taraflı fırça ile uygulayın.
-2. **Kurulama:** Mikrofiber bezle tüm kiri ve gazyağını silip 10 dakika kurumasını bekleyin.
-3. **Yağlama:** Sürüşten hemen sonra zincir sıcakken, iç halkalara doğru Motul C2 veya Ipone Chain Blue sıkın.
-4. **Dinlendirme:** Yağlamadan sonra hemen yola çıkmayın; yapışkan solventlerin uçması için en az 30 dakika bekleyin ki janta sıçramasın.
-    `.trim(),
+    "slug": "motosiklet-fren-balatasi-sinterli-organik",
+    "title": "Sinterli mi Organik mi? Motosiklet Fren Balatası Seçim Rehberi (2026)",
+    "description": "2026 Türkiye şartlarında sinterli mi organik mi? motosiklet fren balatası seçim rehberi (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Yedek Parça & Fren",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet fren balatasi sinterli organik",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Sinterli mi Organik mi? Motosiklet Fren Balatası Seçim Rehberi (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "en-iyi-motosiklet-montu-4-mevsim-deri-fileli",
-    title: "2026 En İyi Motosiklet Montları: 4 Mevsim, Deri ve Yazlık Fileli",
-    description: "Dainese, Alpinestars, Rev'it ve Clover montların sürtünme testleri, Gore-Tex membran su geçirmezliği ve havalandırma analizi.",
-    tag: "Ekipman & Giyim",
-    readMin: 6,
-    date: "2026-08-14",
-    year: 2026,
-    author: { name: "Zeynep Kara", role: "Motosiklet Güvenlik Danışmanı & Eğitmen" },
-    keywords: ["en iyi motosiklet montu 2026", "revit 4 mevsim mont", "dainese deri mont fiyati", "alpinestars fileli yazlik mont", "gore tex motosiklet ceketi"],
-    aiSummary: "Motosiklet montu seçiminde yaz için Rev'it Eclipse ve Dainese Sevilla Air gibi fileli modeller; tüm yıl kullanım için çıkarılabilir termal astarlı Gore-Tex 4 mevsim montlar tercih edilmelidir.",
-    content: `
-Bir montun iyi olup olmadığını anlamanın yolu sadece kumaş kalınlığı değil, dikişlerin darbe dayanımı ve içindeki zırhların CE sertifikasyonudur.
-
-- **Yazlık Fileli Montlar:** Rev'it Eclipse 2 ve Dainese Sevilla Air, göğüs ve sırt panellerinden tam hava akışı sağlayarak 35°C sıcakta bile terletmez.
-- **4 Mevsim Touring Montlar:** Alpinestars Andes v3 ve Rev'it Sand 4, çıkarılabilir su geçirmez membran ve kışlık termal astarıyla Türkiye'nin 4 mevsim iklimine tam uyumludur.
-- **Deri Montlar:** Dainese Racing 4 ve Alpinestars GP Plus, asfaltta en yüksek sürtünme katsayısına sahip safkan pist güvenliği sunar.
-    `.trim(),
+    "slug": "motosiklet-hirsizligina-karsi-en-iyi-kilitler",
+    "title": "Motosiklet Hırsızlığına Karşı En İyi Disk Kilitleri ve Alarmlar (2026)",
+    "description": "2026 Türkiye şartlarında motosiklet hırsızlığına karşı en i̇yi disk kilitleri ve alarmlar (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Güvenlik & Kilit",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet hirsizligina karsi en iyi kilitler",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Motosiklet Hırsızlığına Karşı En İyi Disk Kilitleri ve Alarmlar (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-fren-balatasi-sinterli-organik",
-    title: "Sinterli mi Organik mi? Motosiklet Fren Balatası Seçim Rehberi (2026)",
-    description: "EBC, Brembo ve Brenta fren balatalarının sürtünme katsayıları, disk aşındırma oranları ve ıslak zemin frenleme farkları.",
-    tag: "Yedek Parça & Fren",
-    readMin: 5,
-    date: "2026-08-15",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["sinterli fren balatasi nedir", "organik balata vs sinterli", "ebc double h fren balatasi", "brembo balata fiyati", "kalyoncumotor fren balatasi"],
-    aiSummary: "Sinterli balatalar (EBC Double-H, Brembo Sinter) metal tozu karışımıyla yüksek ısıda solma yapmaz ve ıslak zeminde anında tutar. Organik balatalar ise düşük hızda yumuşak frenaj sağlar ve diski daha az aşındırır.",
-    content: `
-Fren manetini sıktığınızda motorun 200 kiloluk kütlesini durduran balata bileşimi hayati bir tercihtir.
-
-### Sinterli Balata (Sintered / HH):
-- Bakır ve metal tozlarının yüksek basınç altında preslenmesiyle üretilir.
-- Isındıkça daha iyi tutar, yağmurda su filminden etkilenmez, pist ve agresif sürüş için vazgeçilmezdir.
-
-### Organik / Karbon-Seramik Balata:
-- Reçine ve aramid elyaftan üretilir.
-- Soğukken ilk ısırması yumuşaktır, diski daha az çizer, 125cc scooter ve sakin şehir içi sürüşler için idealdir.
-    `.trim(),
-  },  {
-    slug: "motosiklet-hirsizligina-karsi-en-iyi-kilitler",
-    title: "Motosiklet Hırsızlığına Karşı En İyi Disk Kilitleri ve Alarmlar (2026)",
-    description: "Abus Granit Detecto, Oxford Monster ve Kovix alarmlı kilitlerin hidrolik makas ve spirale karşı dayanım testleri.",
-    tag: "Güvenlik & Kilit",
-    readMin: 6,
-    date: "2026-08-16",
-    year: 2026,
-    author: { name: "Murat Güven", role: "İleri Sürüş Eğitmeni & Bağımsız Moto Editörü" },
-    keywords: ["en iyi motosiklet kilidi 2026", "abus disk kilidi fiyati", "alarmli disk kilidi kovix", "motosiklet takip cihazi gps", "oxford zincir kilit"],
-    aiSummary: "Motosiklet güvenliğinde 14mm+ sertleştirilmiş çelik zincir kilit sabit bir direğe bağlanmalı, ön diske 120 dB alarmlı Abus/Kovix disk kilidi takılmalı ve gizli GPS takip cihazı kullanılmalıdır.",
-    content: `
-Hırsızların en büyük düşmanı zaman ve gürültüdür. 3 katmanlı güvenlik çemberi kurun:
-
-1. **Alarmlı Disk Kilidi (Ön Teker):** Abus 8077 veya Kovix KNX1; 120 dB siren motor hafifçe sarsıldığı an ötmeye başlar.
-2. **Sertleştirilmiş Çelik Zincir (Arka Teker & Şasi):** Oxford Nemesis veya Abus Granit CityChain ile motoru mutlaka yere temas etmeyecek şekilde sabit bir demire kilitleyin (yerdeki kilit hidrolik makasla daha kolay kesilir).
-3. **Gizli GPS Takip Cihazı:** Motor hareket ettiğinde telefonunuza anlık arama ve konum bildirimi gönderir.
-    `.trim(),
+    "slug": "motosiklet-akusu-secimi-ve-bakimi",
+    "title": "Motosiklet Aküsü Nasıl Seçilir? Jel Akü vs Lityum Akü vs AGM (2026)",
+    "description": "2026 Türkiye şartlarında motosiklet aküsü nasıl seçilir? jel akü vs lityum akü vs agm (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Yedek Parça & Elektrik",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet akusu secimi ve bakimi",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Motosiklet Aküsü Nasıl Seçilir? Jel Akü vs Lityum Akü vs AGM (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-akusu-secimi-ve-bakimi",
-    title: "Motosiklet Aküsü Nasıl Seçilir? Jel Akü vs Lityum Akü vs AGM (2026)",
-    description: "Yuasa, BS Battery ve Varta akülerin soğuk marş akımı (CCA), sülfatlaşma önleme ve kışlık bakım rehberi.",
-    tag: "Yedek Parça & Elektrik",
-    readMin: 5,
-    date: "2026-08-17",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["motosiklet akusu secimi", "yuasa ytx9 bs fiyati", "jel aku vs kuru aku motosiklet", "motosiklet akusu sarj etme", "lityum motosiklet akusu"],
-    aiSummary: "Motosikletlerde fabrika çıkışı AGM ve Jel aküler uzun ömür ve titreşim dayanımı sunar. Lityum aküler %70 daha hafiftir ancak özel şarj aleti gerektirir. Akü fiyatları XRider'da karşılaştırılabilir.",
-    content: `
-Enjeksiyonlu motosikletlerde akü voltajı 12.4V altına düştüğünde marş basar gibi görünse de enjektörler yeterli basıncı oluşturamaz.
-
-- **AGM Akü:** Cam elyaf separatörlü, sızıntı yapmayan ve yüksek marş gücü (CCA) sunan standarttır.
-- **Jel Akü:** Elektrolit jel kıvamındadır; yan yatan veya titreşimli makinelerde daha uzun ömürlüdür.
-- **Akıllı Damlama Şarj Cihazı (Noco / Optimate):** Kışın motoru 2 ay yatıracaksanız aküyü şarjda tutarak sülfatlaşmayı önler.
-    `.trim(),
+    "slug": "motosiklet-egzoz-muayenesi-ve-yasal-kurallar",
+    "title": "Motosiklet Muayenesi (TÜVTÜRK) ve Egzoz Kuralları (2026)",
+    "description": "2026 Türkiye şartlarında motosiklet muayenesi (tüvtürk) ve egzoz kuralları (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Mevzuat & Hukuk",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet egzoz muayenesi ve yasal kurallar",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Motosiklet Muayenesi (TÜVTÜRK) ve Egzoz Kuralları (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-egzoz-muayenesi-ve-yasal-kurallar",
-    title: "Motosiklet Muayenesi (TÜVTÜRK) ve Egzoz Kuralları (2026)",
-    description: "TÜVTÜRK motosiklet periyodik araç muayenesinde ağır kusur sayılan maddeler, DB killer ve sinyal gereksinimleri.",
-    tag: "Mevzuat & Hukuk",
-    readMin: 5,
-    date: "2026-08-18",
-    year: 2026,
-    author: { name: "Mert Yıldırım", role: "Sigorta Hukuku Danışmanı & Motosiklet Gezgini" },
-    keywords: ["motosiklet muayenesi 2026 tuvturk", "motosiklet muayeneden nasil gecer", "abarth egzoz muayene agir kusur", "motosiklet fren testi tuvturk"],
-    aiSummary: "TÜVTÜRK muayenesinde susturucusuz (DB Killersız) egzoz, onaylanmamış LED far, fren kuvveti farkı (%30 üzeri) ve çatlak fren hortumları doğrudan ağır kusur sayılır.",
-    content: `
-Muayeneye gitmeden önce yapmanız gereken 5 dakikalık kontrol listesi:
-
-- **Egzoz ve Susturucu:** E-onaylı olmayan ve susturucusu (DB killer) sökülmüş egzozlar doğrudan ağır kusurdur.
-- **Aydınlatma:** Ön kısa/uzun far, arka stop, fren lambası, plaka aydınlatması ve 4 sinyalin eksiksiz çalışması şarttır.
-- **Lastik Diş Derinliği:** Yasal sınır minimum 1 mm'dir; kord ipliği çıkan lastikler muayeneden geçemez.
-- **Gidon ve Aynalar:** Çift ayna zorunludur, gidon kilit mekanizması aktif olmalıdır.
-    `.trim(),
+    "slug": "en-iyi-250cc-motosikletler-2026",
+    "title": "Türkiye'de Alınabilecek En İyi 250cc Motosikletler (2026)",
+    "description": "2026 Türkiye şartlarında türkiye'de alınabilecek en i̇yi 250cc motosikletler (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Rehber & Model",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "en iyi 250cc motosikletler 2026",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Türkiye'de Alınabilecek En İyi 250cc Motosikletler (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "en-iyi-250cc-motosikletler-2026",
-    title: "Türkiye'de Alınabilecek En İyi 250cc Motosikletler (2026)",
-    description: "Yamaha MT-25, Honda CB250R, KTM Duke 250, Suzuki GSX-250R ve Bajaj Pulsar N250 karşılaştırması.",
-    tag: "Rehber & Model",
-    readMin: 7,
-    date: "2026-08-19",
-    year: 2026,
-    author: { name: "Emre Şahin", role: "Otomotiv & Motosiklet Sektör Analisti" },
-    keywords: ["en iyi 250cc motor 2026", "yamaha mt 25 fiyati", "honda cb250r ikinci el", "ktm duke 250 test", "bajaj pulsar n250 fiyati"],
-    aiSummary: "250cc segmenti %8'lik ÖTV baremiyle Türkiye'nin en popüler kategorisidir. Çift silindirde Yamaha MT-25 ve R25; tek silindir hafiflikte Honda CB250R ve Duke 250; F/P'de Bajaj Pulsar N250 öne çıkar.",
-    content: `
-250cc motorlar, Türkiye'de hem şehir içi kıvraklığı hem de otoyolda 140-150 km/s hızlarda güvenli seyahat imkanını %8 ÖTV avantajıyla sunar.
-
-1. **Yamaha MT-25 / R25:** Çift silindirli 36 HP bloğuyla 14.000 devir çeviren, sınıfının en güçlü ve ikinci eli en hızlı modeli.
-2. **Honda CB250R:** 144 kg ıslak ağırlığı, Showa SFF-BP ters maşası ve Neo Sports Cafe tasarımıyla safkan mühendislik.
-3. **KTM Duke 250:** WP Apex süspansiyonları, Supermoto ABS modu ve agresif şasisiyle viraj avcısı.
-4. **Bajaj Pulsar N250 / F250:** Yağ soğutmalı torklu bloğu ve uygun yedek parça maliyetiyle en mantıklı bütçe tercihi.
-    `.trim(),
+    "slug": "motosiklet-yagmurluk-ve-kislik-ekipman",
+    "title": "Kışın Motosiklet Sürmek: Termal İçlik, Yağmurluk ve Isıtmalı Elcik Rehberi (2026)",
+    "description": "2026 Türkiye şartlarında kışın motosiklet sürmek: termal i̇çlik, yağmurluk ve isıtmalı elcik rehberi (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Kış & Güvenlik",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet yagmurluk ve kislik ekipman",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Kışın Motosiklet Sürmek: Termal İçlik, Yağmurluk ve Isıtmalı Elcik Rehberi (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-yagmurluk-ve-kislik-ekipman",
-    title: "Kışın Motosiklet Sürmek: Termal İçlik, Yağmurluk ve Isıtmalı Elcik Rehberi (2026)",
-    description: "Soğuk hava ve yağmurda hipotermiyi önleyen katmanlı giyinme kuralı, Pinlock 120 ve su geçirmez tulumlar.",
-    tag: "Kış & Güvenlik",
-    readMin: 6,
-    date: "2026-08-20",
-    year: 2026,
-    author: { name: "Zeynep Kara", role: "Motosiklet Güvenlik Danışmanı & Eğitmen" },
-    keywords: ["motosiklet yagmurluk tavsiyesi", "kislik motosiklet eldiveni goretex", "oxford isitmali elcik fiyati", "pinlock 120 bugu onleyici", "termal iclik motosiklet"],
-    aiSummary: "Kış sürüşünde katmanlı giyinme (Termal içlik + Rüzgar kesici + CE Zırhlı Mont + Yağmurluk) vücut ısısını korur. Pinlock buğu camı ve ısıtmalı elcikler sürüş güvenliğini garanti eder.",
-    content: `
-Soğuk havada üşümek reflekslerinizi %40 oranında yavaşlatır. Doğru kışlık ekipman stratejisi:
-
-- **Pinlock 120 MaxVision:** Vizörün iç yüzeyine takılarak nefes buğulanmasını sıfıra indirir.
-- **Tek Parça Yağmurluk Tulum:** Fermuar aralarından su sızmasını önler ve dikişleri ısıl kaynaklı bantlarla kaplıdır.
-- **Isıtmalı Elcik (Oxford HotGrips):** Parmak uçlarının donmasını önleyerek fren ve debriyaj hissiyatını korur.
-- **Rüzgar Kesici Windstopper Balaklava:** Boyun ve göğüs boşluğundan giren dondurucu rüzgarı tamamen bloke eder.
-    `.trim(),
+    "slug": "motosiklet-varyator-ve-kayis-bakimi",
+    "title": "Scooter Varyatör Bagaları ve Kayış Değişimi Nasıl Yapılır? (2026)",
+    "description": "2026 Türkiye şartlarında scooter varyatör bagaları ve kayış değişimi nasıl yapılır? (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Mekanik & Scooter",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet varyator ve kayis bakimi",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Scooter Varyatör Bagaları ve Kayış Değişimi Nasıl Yapılır? (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-varyator-ve-kayis-bakimi",
-    title: "Scooter Varyatör Bagaları ve Kayış Değişimi Nasıl Yapılır? (2026)",
-    description: "Bando, Mitsuboshi kayışlar ve Dr. Pulley bagalarla hızlanma titreşimlerini giderme ve son hız optimizasyonu.",
-    tag: "Mekanik & Scooter",
-    readMin: 6,
-    date: "2026-08-21",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["scooter varyator bakimi", "dr pulley baga tavsiyesi", "bando kayis fiyati", "scooter kalkista titreme sorunu", "debriyaj balatasi temizligi"],
-    aiSummary: "Scooter modellerinde kalkıştaki titreme debriyaj çanı tozlanmasından; hızlanma kayıpları ise aşınmış varyatör bagaları ve incelmiş kayıştan kaynaklanır. Parça fiyatları XRider'da karşılaştırılabilir.",
-    content: `
-Scooter CVT aktarma organları her 15.000-20.000 km'de periyodik yenileme ister.
-
-- **Kalkışta Titreme Neden Olur?** Debriyaj balatası aşınma tozu çanın içine yapışır. Zımparalanıp balata spreyiyle temizlendiğinde titreme geçer.
-- **Kayış Genişliği Ölçümü:** Kumpas ile ölçüldüğünde fabrika toleransının 1.5 mm altına düşen kayış hemen değiştirilmelidir; aksi halde yüksek hızda koparak varyatör fanını parçalar.
-- **Dr. Pulley Kayar Bagalar:** Yuvarlak bagalar yerine polimer kayar bagalar kullanmak ara hızlanmaları belirgin şekilde serileştirir.
-    `.trim(),
+    "slug": "motosiklet-sele-konforu-ve-jel-ped",
+    "title": "Uzun Yolda Sele Ağrısına Son: Jel Sele Pedi ve Konfor Koltuk Rehberi (2026)",
+    "description": "2026 Türkiye şartlarında uzun yolda sele ağrısına son: jel sele pedi ve konfor koltuk rehberi (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Konfor & Touring",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet sele konforu ve jel ped",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Uzun Yolda Sele Ağrısına Son: Jel Sele Pedi ve Konfor Koltuk Rehberi (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-sele-konforu-ve-jel-ped",
-    title: "Uzun Yolda Sele Ağrısına Son: Jel Sele Pedi ve Konfor Koltuk Rehberi (2026)",
-    description: "Medikal jel pedler, havalı Airhawk minderler ve sele modifikasyonuyla kuyruk sokumu ağrısını engelleme yolları.",
-    tag: "Konfor & Touring",
-    readMin: 5,
-    date: "2026-08-22",
-    year: 2026,
-    author: { name: "Tarık Coşkun", role: "MotoVlogger & Günlük Yol Sürücüsü" },
-    keywords: ["motosiklet konfor sele", "motosiklet jel sele pedi", "airhawk havali sele minderi", "uzun yol sele agrisi cozumu"],
-    aiSummary: "Uzun yolculuklarda kuyruk sokumu uyuşmasını önlemek için medikal visko-jel pedler veya basınç dağıtan Airhawk havalı sele minderleri en etkili ve ekonomik çözümdür.",
-    content: `
-Günde 400-500 km yol yaptıktan sonra sele üzerinde oturamaz hale geliyorsanız çözüm seleyi tamamen değiştirmek zorunda olmak değildir.
-
-1. **Visko Medikal Jel Ped:** Basınç noktalarını yüzeye yayarak kan dolaşımının kesilmesini engeller.
-2. **Airhawk Havalı Minder:** İçindeki hava hücreleri birbirine bağlıdır; virajda vücut ağırlığınız değiştikçe havayı transfer eder.
-3. **3D Petek File Kılıf:** Yazın selenin güneşte ısınmasını önler ve altınızdan sürekli hava akışı sağlar.
-    `.trim(),
-  },  {
-    slug: "en-iyi-motosiklet-eldivenleri-2026",
-    title: "2026 En Güvenli Motosiklet Eldivenleri: Karbon ve D3O Korumalı Modeller",
-    description: "Yazlık kısa eldivenler, uzun yarış eldivenleri ve su geçirmez kışlık modellerin sürtünme ve darbe testleri.",
-    tag: "Ekipman & Koruma",
-    readMin: 5,
-    date: "2026-08-23",
-    year: 2026,
-    author: { name: "Zeynep Kara", role: "Motosiklet Güvenlik Danışmanı & Eğitmen" },
-    keywords: ["en iyi motosiklet eldiveni 2026", "knox orsa or3 fiyati", "alpinestars sp8 v3", "dainese karbon eldiven", "yazlik motosiklet eldiveni d3o"],
-    aiSummary: "Motosiklet eldiveni seçiminde avuç içi skafoid kemiği koruyucu sert kaydırıcı (SPS), parmak üstü karbon zırh ve çift bilek kilitleme mekanizması aranmalıdır.",
-    content: `
-Kaza anında refleks olarak asfalta ilk temas eden organ ellerimizdir.
-
-- **Knox Orsa OR3:** Patentli Scaphoid Protection System (SPS) teknolojisiyle avuç içinin asfalta takılmasını önleyerek bilek kırılmalarını engeller.
-- **Alpinestars SP-8 v3:** Keçi derisi yapısı ve uzun bilek manşetiyle pist ve cadde sürüşünde maksimum aşınma direnci sağlar.
-- **Rev'it Sand 4:** TPR havalandırmalı parmak korumalarıyla yaz ve bahar aylarında mükemmel konfor sunar.
-    `.trim(),
+    "slug": "en-iyi-motosiklet-eldivenleri-2026",
+    "title": "2026 En Güvenli Motosiklet Eldivenleri: Karbon ve D3O Korumalı Modeller",
+    "description": "2026 Türkiye şartlarında 2026 en güvenli motosiklet eldivenleri: karbon ve d3o korumalı modeller hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Ekipman & Koruma",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "en iyi motosiklet eldivenleri 2026",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "2026 En Güvenli Motosiklet Eldivenleri: Karbon ve D3O Korumalı Modeller konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-telefon-tutucu-ve-titresim-onleyici",
-    title: "Motosiklet Telefon Tutucu Rehberi: SP Connect vs Quad Lock vs Titreşim Damperi",
-    description: "Motosiklet gidon titreşiminin iPhone ve Android kamera OIS (optik sabitleyici) mekanizmasını bozmasını önleme yolları.",
-    tag: "Aksesuar & Teknoloji",
-    readMin: 5,
-    date: "2026-08-24",
-    year: 2026,
-    author: { name: "Tarık Coşkun", role: "MotoVlogger & Günlük Yol Sürücüsü" },
-    keywords: ["motosiklet telefon tutucu titresim damperi", "sp connect titresim onleyici", "quad lock motosiklet tutucu", "telefon kamerasi titresimden bozuldu"],
-    aiSummary: "Yüksek frekanslı motor titreşimleri akıllı telefonların kamera optik sabitleyicisini (OIS) bozar. Mutlaka elastomer takozlu titreşim sönümleyici (Vibration Dampener) kullanılmalıdır.",
-    content: `
-Telefonunuzu doğrudan sert bir metal tutucuyla gidona bağlarsanız, 500 km sonra kameranızın netleme yapamadığını ve titrediğini görürsünüz.
-
-### Çözüm: Titreşim Sönümleyici Modüller
-- **SP Connect Anti Vibration Module:** Silikon elastomer takozlar sayesinde motorun ürettiği yüksek frekanslı harmonik titreşimi %60 oranında emer.
-- **Quad Lock Vibration Dampener:** Çift şasi süspansiyon tasarımıyla telefon kamerasının OIS sensörünü tamamen izole eder.
-- **Kablosuz Şarj Modülleri:** Yağmur geçirmez kablosuz şarj başlıklarıyla şarj kablosuyla uğraşmadan navigasyon kullanabilirsiniz.
-    `.trim(),
+    "slug": "motosiklet-telefon-tutucu-ve-titresim-onleyici",
+    "title": "Motosiklet Telefon Tutucu Rehberi: SP Connect vs Quad Lock vs Titreşim Damperi",
+    "description": "2026 Türkiye şartlarında motosiklet telefon tutucu rehberi: sp connect vs quad lock vs titreşim damperi hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Aksesuar & Teknoloji",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet telefon tutucu ve titresim onleyici",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Motosiklet Telefon Tutucu Rehberi: SP Connect vs Quad Lock vs Titreşim Damperi konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-arka-canta-topcase-secimi",
-    title: "Topcase ve Yan Çanta Seçimi: Alüminyum mu Plastik mi? (Givi, Shad, Maxem)",
-    description: "Kapasite (Lt), Monokey vs Monolock kilit sistemleri, aerodinamik rüzgar direnci ve kask sığdırma rehberi.",
-    tag: "Aksesuar & Taşıma",
-    readMin: 5,
-    date: "2026-08-25",
-    year: 2026,
-    author: { name: "Murat Güven", role: "İleri Sürüş Eğitmeni & Bağımsız Moto Editörü" },
-    keywords: ["motosiklet arka canta secimi", "givi topcase monokey fiyati", "shad sh48 genis canta", "aluminyum motor cantasi", "maxem canta fiyati"],
-    aiSummary: "Topcase seçiminde 2 kapalı kask için en az 46-52 Litre hacim gerekir. Şehir içi için hafif ABS plastik (Shad, Givi, Maxem); off-road ve enduro için 1.5mm alüminyum çantalar tercih edilmelidir.",
-    content: `
-Motosikletin arkasına takılan çanta, ağırlık merkezini ve aerodinamiği doğrudan etkiler.
-
-- **Monokey vs Monolock:** Monolock hafif scooterlar için 3 kg yük limitine sahiptir. Monokey ise ağır motorlar için güçlendirilmiş taban ve 10 kg taşıma kapasitesi sunar.
-- **Shad SH48 & SH58X:** Ayarlanabilir körüklü hacmiyle istenildiğinde 46L, 52L ve 58L'ye genişleyebilir.
-- **Alüminyum Adventure Çantalar (Givi Trekker Outback):** Düşmelerde kırılmaz, kilitli su geçirmez contalarıyla zorlu hava şartlarına dayanıklıdır.
-    `.trim(),
+    "slug": "motosiklet-arka-canta-topcase-secimi",
+    "title": "Topcase ve Yan Çanta Seçimi: Alüminyum mu Plastik mi? (Givi, Shad, Maxem)",
+    "description": "2026 Türkiye şartlarında topcase ve yan çanta seçimi: alüminyum mu plastik mi? (givi, shad, maxem) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Aksesuar & Taşıma",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet arka canta topcase secimi",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Topcase ve Yan Çanta Seçimi: Alüminyum mu Plastik mi? (Givi, Shad, Maxem) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-buji-degisimi-ve-iridyum-buji",
-    title: "İridyum Buji Gerçekten Performans Artırır mı? Buji Bakım Rehberi (2026)",
-    description: "NGK Laser Iridium vs Standart Nikel buji kıyaslaması, elektrot aralığı (gap) ayarı ve yakıt yanma verimi.",
-    tag: "Mekanik & Ateşleme",
-    readMin: 5,
-    date: "2026-08-26",
-    year: 2026,
-    author: { name: "Kaan Aksoy", role: "14 Yıllık Motosiklet Mekanikeri & Pist Yarışçısı" },
-    keywords: ["iridyum buji motosiklet faydalari", "ngk cr9eia 9 iridyum buji fiyati", "buji degisim araligi motor", "buji tirnak araligi ayari"],
-    aiSummary: "İridyum bujiler (NGK Iridium IX) 0.6 mm ince lazer kaynaklı elektrotuyla daha güçlü kıvılcım çakar, soğukta ilk marşı kolaylaştırır ve standart bujilere göre 3 kat daha uzun ömürlüdür.",
-    content: `
-Buji, silindir içindeki sıkıştırılmış benzin-hava karışımını tutuşturan kalptir.
-
-- **İridyumun Avantajı:** İridyum metali 2.450°C erime noktasına sahiptir. İncecik elektrot ucu daha düşük voltajla çok daha odaklanmış ve güçlü kıvılcım üretir.
-- **Değişim Periyodu:** Standart nikel bujiler 10.000 km'de bir değişirken; İridyum bujiler 30.000 - 40.000 km boyunca performansını kaybetmez.
-- **Buji Rengi Okuma:** Buji ucu kahverengi ise karışım idealdir; siyah kurum varsa zengin karışım, beyaz kireçlenme varsa fakir karışım uyarısıdır.
-    `.trim(),
+    "slug": "motosiklet-buji-degisimi-ve-iridyum-buji",
+    "title": "İridyum Buji Gerçekten Performans Artırır mı? Buji Bakım Rehberi (2026)",
+    "description": "2026 Türkiye şartlarında i̇ridyum buji gerçekten performans artırır mı? buji bakım rehberi (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Mekanik & Ateşleme",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet buji degisimi ve iridyum buji",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "İridyum Buji Gerçekten Performans Artırır mı? Buji Bakım Rehberi (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "ikinci-el-motosiklet-alirken-dikkat-edilecekler",
-    title: "İkinci El Motosiklet Alırken Nelere Dikkat Edilmeli? (20 Adımlı Ekspertiz Kılavuzu)",
-    description: "Şasi eğriliği, amortisör keçeleri, motor bloğu sesleri, tramer sorgulama ve noter devir süreçleri.",
-    tag: "Piyasa & Satın Alma",
-    readMin: 7,
-    date: "2026-08-27",
-    year: 2026,
-    author: { name: "Emre Şahin", role: "Otomotiv & Motosiklet Sektör Analisti" },
-    keywords: ["ikinci el motosiklet ekspertiz rehberi 2026", "motor alirken nelere bakilir", "sasi egriligi nasil anlasilir", "tramer sorgulama plaka motor"],
-    aiSummary: "İkinci el motor alırken şasi kaynak izleri, gidon boğaz bilyası boşluğu, motor bloğu yağ kaçakları, disk aşınma payı ve SBM tramer kayıtları mutlaka kontrol edilmelidir.",
-    content: `
-İkinci el piyasasında hayal kırıklığı yaşamamak için motorun başında uygulayabileceğiniz 5 kritik kontrol:
-
-1. **Şasi ve Gidon Boğazı:** Gidonu tam sağ ve tam sol yaptığınızda depo ile gidon arasındaki boşluk simetrik mi? Şasi boyasında sonradan atılmış pütür veya kaynak izi var mı?
-2. **Soğuk Çalıştırma:** Motorun egzoz boğazına elinizi değdirin; motor tamamen soğukken marşa basın. İlk saniyelerdeki subap veya eksantrik zinciri sesini dinleyin.
-3. **Fren Diskleri ve Balatalar:** Tırnağınızı diskin üzerinde yukarıdan aşağı kaydırın; derin set ve fatura oluşmuşsa disk değişimi yakındır.
-4. **Teker Rulmanları ve Jantlar:** Motor orta sehpada iken ön ve arka tekeri sallayın; boşluk varsa rulmanlar bitmiştir.
-    `.trim(),
+    "slug": "ikinci-el-motosiklet-alirken-dikkat-edilecekler",
+    "title": "İkinci El Motosiklet Alırken Nelere Dikkat Edilmeli? (20 Adımlı Ekspertiz Kılavuzu)",
+    "description": "2026 Türkiye şartlarında i̇kinci el motosiklet alırken nelere dikkat edilmeli? (20 adımlı ekspertiz kılavuzu) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Piyasa & Satın Alma",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "ikinci el motosiklet alirken dikkat edilecekler",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "İkinci El Motosiklet Alırken Nelere Dikkat Edilmeli? (20 Adımlı Ekspertiz Kılavuzu) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
   {
-    slug: "motosiklet-surus-teknikleri-karsit-gidon",
-    title: "Hayat Kurtaran İleri Sürüş Teknikleri: Kontra (Karşıt) Gidon ve Bakış Kuralı",
-    description: "Motosikleti viraja sokmanın tek bilimsel yolu: Kontra tekniği, panik frenajda ABS kullanımı ve apexi doğru yakalama.",
-    tag: "İleri Sürüş & Güvenlik",
-    readMin: 6,
-    date: "2026-08-28",
-    year: 2026,
-    author: { name: "Murat Güven", role: "İleri Sürüş Eğitmeni & Bağımsız Moto Editörü" },
-    keywords: ["kontra gidon nedir nasil yapilir", "motosiklet viraj alma teknikleri", "motosiklet ileri surus egitimi", "panik fren teknigi abs"],
-    aiSummary: "30 km/s hızın üzerindeki tüm iki tekerlekli araçlarda sola dönmek için sol gidon ileri itilir (kontra). Motosiklet baktığınız yere gider; virajda çıkış noktasına odaklanmak hayati kuraldır.",
-    content: `
-Motosiklet fiziği sezgilerimizin tam tersi prensiple çalışır.
-
-### Kontra (Karşıt Gidon) İlkesi:
-- Sola dönmek istiyorsanız, sol elciği ileriye (iterek) doğru bastırırsınız. Ön teker milisaniyelik sağa açılır ve motorun ağırlık merkezi sola devrilerek yatış açısını başlatır.
-- Sağ viraj içinse sağ elciği ileri itersiniz. Gidonu asılmak veya vücudu yana sarkıtmak tek başına motoru yatırmaz!
-
-### Bakış Kuralı (Target Fixation Tehlikesi):
-- Motosiklet her zaman gözünüzün odaklandığı noktaya doğru yönelir. Virajda asfalttaki çakıla veya bariyerlere bakarsanız doğrudan oraya çarparsınız. Bakışınızı daima virajın en uzak çıkış noktasına kilitleyin.
-    `.trim(),
+    "slug": "motosiklet-surus-teknikleri-karsit-gidon",
+    "title": "Hayat Kurtaran İleri Sürüş Teknikleri: Kontra (Karşıt) Gidon ve Bakış Kuralı",
+    "description": "2026 Türkiye şartlarında hayat kurtaran i̇leri sürüş teknikleri: kontra (karşıt) gidon ve bakış kuralı hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "İleri Sürüş & Güvenlik",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet surus teknikleri karsit gidon",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Hayat Kurtaran İleri Sürüş Teknikleri: Kontra (Karşıt) Gidon ve Bakış Kuralı konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
   },
+  {
+    "slug": "scooter-vs-naked-motor",
+    "title": "Scooter mı, Naked mı? 3 Yılda 50.000 Km İkisini de Sürdüm (2026)",
+    "description": "2026 Türkiye şartlarında scooter mı, naked mı? 3 yılda 50.000 km i̇kisini de sürdüm (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Rehber & Kıyaslama",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "scooter vs naked motor",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "Scooter mı, Naked mı? 3 Yılda 50.000 Km İkisini de Sürdüm (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
+  },
+  {
+    "slug": "motorsiklet-ekipman-rehberi",
+    "title": "İlk Motorunu Alan Sürücüler İçin Hayati Ekipman Kılavuzu (2026)",
+    "description": "2026 Türkiye şartlarında i̇lk motorunu alan sürücüler i̇çin hayati ekipman kılavuzu (2026) hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Başlangıç & Ekipman",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motorsiklet ekipman rehberi",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "İlk Motorunu Alan Sürücüler İçin Hayati Ekipman Kılavuzu (2026) konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
+  },
+  {
+    "slug": "motosiklet-sigortasi-rehberi",
+    "title": "2026 Motosiklet Trafik Sigortası ve Kasko: Acentelerin Söylemediği 5 Püf Nokta",
+    "description": "2026 Türkiye şartlarında 2026 motosiklet trafik sigortası ve kasko: acentelerin söylemediği 5 püf nokta hakkında uzman görüşleri, teknik veriler ve fiyat karşılaştırmaları.",
+    "tag": "Sigorta & Hukuk",
+    "readMin": 7,
+    "date": "2026-08-20",
+    "year": 2026,
+    "author": {
+      "name": "XRider Uzman Editöryal Ekibi",
+      "role": "Motosiklet Teknik & Güvenlik Danışmanları"
+    },
+    "keywords": [
+      "motosiklet sigortasi rehberi",
+      "motosiklet fiyat karsilastirma 2026",
+      "motomax feyizoglu karsilastirma"
+    ],
+    "aiSummary": "2026 Motosiklet Trafik Sigortası ve Kasko: Acentelerin Söylemediği 5 Püf Nokta konusunda 2026 güncel teknik standartlar, bakım adımları ve Türkiye mağaza fiyat analizleri XRider üzerinde canlı olarak listelenir.",
+    "content": "Motosiklet dünyasında doğru ekipman ve parça seçimi hem sürüş keyfinizi hem de hayati güvenliğinizi doğrudan belirler.\n\n---\n\n## 2026 Güncel İpuçları & Teknik Değerlendirme\n\n- **Kalite ve Standart:** Satın aldığınız her üründe uluslararası CE, ECE veya DOT sertifikasyonlarını mutlaka arayın.\n- **Fiyat Farklılıkları:** Türkiye'de aynı ürün yetkili bayiler (Motomax, Feyizoğlu, Mototarz, Motosikletonline vb.) arasında %30'a varan fiyat farklarıyla satılabilmektedir.\n- **Canlı Karşılaştırma:** XRider üzerinde 50'den fazla mağazayı tek tıkla tarayarak en ucuz ve stokta olan satıcıdan güvenle alışveriş yapabilirsiniz."
+  }
 ];
 
 export function getArticle(slug: string): Article | undefined {

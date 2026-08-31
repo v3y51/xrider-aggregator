@@ -1,4 +1,4 @@
-﻿"""
+"""
 XRider 2026 Gelişmiş Çoklu Mağaza Fiyat Karşılaştırma ve Scraping Motoru.
 50+ Türkiye motosiklet, ekipman, kask, yedek parça ve aksesuar mağazasını paralel tarar.
 Akakçe benzeri fiyat karşılaştırma ve canlı teklif birleştirme sunar.
@@ -42,21 +42,57 @@ class ScrapedItem(BaseModel):
 
 
 def _parse_price(text: str) -> float | None:
-    """'1.299,90 TL' veya '15.450 TL' -> 1299.90 / 15450.0"""
+    """
+    Türkiye e-ticaret sitelerindeki fiyatları hatasız parse eder:
+    - '1.280 TL' -> 1280.0
+    - '1.510,00 TL' -> 1510.0
+    - '15.450 TL' -> 15450.0
+    - '1.299,90 TL' -> 1299.90
+    - '3.690 TL' -> 3690.0
+    """
     if not text:
         return None
-    # Sadece rakam, nokta ve virgülü al
-    cleaned = re.sub(r"[^\d,.]", "", text)
+    cleaned = re.sub(r"[^\d,.]", "", text.strip())
     if not cleaned:
         return None
+
+    # Durum 1: Hem nokta hem virgül var (Örn: "1.250,50" veya "1,250.50")
     if "," in cleaned and "." in cleaned:
-        # 1.250,50 formatı
-        cleaned = cleaned.replace(".", "").replace(",", ".")
+        last_dot = cleaned.rfind(".")
+        last_comma = cleaned.rfind(",")
+        if last_comma > last_dot:
+            # Standart TR formatı: 1.250,50
+            cleaned = cleaned.replace(".", "").replace(",", ".")
+        else:
+            # US formatı: 1,250.50
+            cleaned = cleaned.replace(",", "")
+    elif "." in cleaned:
+        # Sadece nokta var: "1.280" veya "15.450" veya "1.280.000" veya "1280.50"
+        parts = cleaned.split(".")
+        if len(parts) > 2:
+            cleaned = cleaned.replace(".", "")
+        elif len(parts) == 2:
+            # Eğer noktadan sonra 3 hane varsa (Örn: "1.280" -> 1280 TL, "3.690" -> 3690 TL) binliktir
+            if len(parts[1]) == 3:
+                cleaned = cleaned.replace(".", "")
+            elif len(parts[1]) <= 2:
+                # "1280.50" veya "1280.5" -> ondalık nokta
+                pass
+            else:
+                cleaned = cleaned.replace(".", "")
     elif "," in cleaned:
-        # 1250,50 formatı
-        cleaned = cleaned.replace(",", ".")
+        # Sadece virgül var: "1280,50" (ondalık) veya "1,280" (binlik)
+        parts = cleaned.split(",")
+        if len(parts) == 2 and len(parts[1]) == 3:
+            cleaned = cleaned.replace(",", "")
+        else:
+            cleaned = cleaned.replace(",", ".")
+
     try:
         val = float(cleaned)
+        # Motosiklet ve ekipmanlarda fiyat 100 TL'nin altındaysa ve 3 haneli bir binlik hatası varsa düzelt
+        if 0 < val < 50.0 and "." in text and not ("," in text):
+            val = val * 1000.0
         return val if val > 0 else None
     except Exception:
         return None
@@ -64,7 +100,12 @@ def _parse_price(text: str) -> float | None:
 
 def _format_price_tr(amount: float | None, original_text: str | None) -> str | None:
     if amount is not None and amount > 0:
-        return f"₺{amount:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+        # 1280.0 -> "₺1.280,00" veya küsurat yoksa "₺1.280"
+        if amount.is_integer():
+            formatted = f"{int(amount):,}".replace(",", ".")
+            return f"₺{formatted}"
+        formatted = f"{amount:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+        return f"₺{formatted}"
     return original_text
 
 

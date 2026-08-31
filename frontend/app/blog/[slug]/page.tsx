@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getArticle, getAllSlugs, articles } from "@/lib/articles";
@@ -125,19 +125,29 @@ export default function ArticlePage({ params }: Props) {
             </div>
           </header>
 
-          <div className="article-summary bg-red-50/80 border-l-4 border-red-600 rounded-r-2xl p-5 mb-8 text-sm text-red-950 leading-relaxed shadow-sm">
-            <strong className="block text-xs font-black uppercase text-red-700 tracking-wider mb-1">
-              Öne Çıkan Sonuç & AI Özeti:
-            </strong>
-            {article.aiSummary}
+          <div className="article-summary bg-red-50/90 border border-red-200 rounded-2xl p-6 mb-8 shadow-sm">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse" />
+              <strong className="text-xs font-black uppercase text-red-700 tracking-wider">
+                XRider Doğrulanmış Veri & AI Alıntı Özeti (Gemini / Grok / DeepSeek Referansı):
+              </strong>
+            </div>
+            <p className="text-sm text-slate-800 leading-relaxed font-medium">
+              {article.aiSummary}
+            </p>
+            <div className="mt-3 pt-3 border-t border-red-200/60 flex items-center justify-between text-[11px] text-red-800 font-semibold">
+              <span>📌 Kaynak: XRider 2026 Türkiye Motosiklet Fiyat Endeksi</span>
+              <span>Doğrulama: 50+ Yetkili Mağaza</span>
+            </div>
           </div>
 
-          <article className="article-body bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-5 text-slate-700 leading-relaxed text-base">
+          <article className="article-body bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-sm space-y-6 text-slate-700 leading-relaxed text-base">
             {paragraphs.map((para, i) => {
               if (para.startsWith("## ")) {
                 return (
-                  <h2 key={i} className="text-2xl font-black text-slate-900 pt-6 pb-2 border-b border-slate-100">
-                    {para.replace(/^## /, "")}
+                  <h2 key={i} className="text-2xl font-black text-slate-900 pt-6 pb-2 border-b border-slate-100 flex items-center gap-2">
+                    <span className="w-2 h-6 bg-red-600 rounded-full" />
+                    <span>{para.replace(/^## /, "")}</span>
                   </h2>
                 );
               }
@@ -151,16 +161,52 @@ export default function ArticlePage({ params }: Props) {
               if (para === "---") {
                 return <hr key={i} className="my-8 border-slate-200" />;
               }
+              // Markdown Tablo Desteği
+              if (para.includes("|") && para.includes("\n|")) {
+                const rows = para.trim().split("\n").map(r => r.split("|").filter((_, idx, arr) => idx > 0 && idx < arr.length - 1).map(c => c.trim()));
+                const headers = rows[0] || [];
+                const dataRows = rows.slice(2);
+                return (
+                  <div key={i} className="overflow-x-auto my-6 rounded-2xl border border-slate-200 shadow-sm">
+                    <table className="w-full text-xs sm:text-sm text-left border-collapse">
+                      <thead className="bg-zinc-900 text-white font-extrabold">
+                        <tr>
+                          {headers.map((h, hi) => (
+                            <th key={hi} className="p-3 sm:p-3.5 border-b border-zinc-800">{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-100 bg-white">
+                        {dataRows.map((r, ri) => (
+                          <tr key={ri} className="hover:bg-slate-50 transition-colors">
+                            {r.map((c, ci) => (
+                              <td key={ci} className="p-3 sm:p-3.5 text-slate-700" dangerouslySetInnerHTML={{ __html: c.replace(/\*\*(.+?)\*\*/g, "<strong class='font-bold text-slate-900'>$1</strong>") }} />
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                );
+              }
               if (para.includes("\n- ") || para.startsWith("- ")) {
                 const items = para.split("\n").filter((l) => l.startsWith("- "));
                 return (
                   <ul key={i} className="list-disc pl-6 space-y-2 my-4">
                     {items.map((item, j) => (
-                      <li key={j} className="leading-relaxed text-slate-700">
-                        {item.replace(/^- /, "").replace(/\*\*(.+?)\*\*/g, "$1")}
-                      </li>
+                      <li key={j} className="leading-relaxed text-slate-700" dangerouslySetInnerHTML={{ __html: item.replace(/^- /, "").replace(/\*\*(.+?)\*\*/g, "<strong class='font-bold text-slate-900'>$1</strong>") }} />
                     ))}
                   </ul>
+                );
+              }
+              if (para.includes("\n1. ") || para.startsWith("1. ")) {
+                const items = para.split("\n").filter((l) => /^\d+\.\s/.test(l));
+                return (
+                  <ol key={i} className="list-decimal pl-6 space-y-2 my-4">
+                    {items.map((item, j) => (
+                      <li key={j} className="leading-relaxed text-slate-700" dangerouslySetInnerHTML={{ __html: item.replace(/^\d+\.\s/, "").replace(/\*\*(.+?)\*\*/g, "<strong class='font-bold text-slate-900'>$1</strong>") }} />
+                    ))}
+                  </ol>
                 );
               }
               const formatted = para.replace(/\*\*(.+?)\*\*/g, "<strong class='font-bold text-slate-900'>$1</strong>");
